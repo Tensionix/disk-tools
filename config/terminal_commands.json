@@ -1,0 +1,9 @@
+{
+  "history": [
+    "$e=[char]27; Write-Host \"$e[32mдочерний вывод: — ✓ → █ Привет$e[0m\"; Get-ChildItem | Select-Object -First 3"
+  ],
+  "pinned": [],
+  "last": "",
+  "shell": "powershell",
+  "cwd": "."
+}

@@ -1,0 +1,173 @@
+{
+  "pairs": [
+    {
+      "name": "copy_by_mask",
+      "source": "D:\\SOURCE\\MASKED_COPY",
+      "target": "E:\\TARGET\\MASKED_COPY",
+      "mode": "safe",
+      "mirror": false,
+      "operation_policy": "copy_update",
+      "requires_masks": true,
+      "exclude_presets": [
+        "TEMP"
+      ],
+      "sync_kind": "sync"
+    },
+    {
+      "name": "projects_to_dacha",
+      "source": "N:\\Projects",
+      "target": "D:\\Backup\\Projects",
+      "mode": "safe",
+      "mirror": true,
+      "operation_policy": "mirror_safe",
+      "anchor": true,
+      "note": "N: is a mounted remote root",
+      "sync_kind": "backup"
+    },
+    {
+      "name": "dev_backup",
+      "source": "D:\\SOURCE\\DEV",
+      "target": "E:\\BACKUP\\DEV",
+      "mode": "safe",
+      "mirror": true,
+      "operation_policy": "mirror_hard",
+      "include_presets": [
+        "DEV",
+        "DOCS"
+      ],
+      "exclude_presets": [
+        "TEMP"
+      ],
+      "exclude_dirs": [
+        ".git",
+        ".venv",
+        "__pycache__",
+        "node_modules",
+        ".mypy_cache",
+        ".pytest_cache",
+        "build",
+        "dist"
+      ],
+      "exclude_hidden": false,
+      "sync_kind": "backup"
+    },
+    {
+      "name": "docs_backup",
+      "source": "D:\\SOURCE\\DOCS",
+      "target": "E:\\BACKUP\\DOCS",
+      "mode": "safe",
+      "mirror": true,
+      "operation_policy": "mirror_hard",
+      "include_presets": [
+        "DOCS"
+      ],
+      "exclude_presets": [
+        "TEMP"
+      ],
+      "exclude_dirs": [
+        ".git",
+        "cache",
+        "tmp"
+      ],
+      "exclude_hidden": true,
+      "sync_kind": "backup"
+    },
+    {
+      "name": "graphics_backup",
+      "source": "D:\\SOURCE\\GRAPHICS",
+      "target": "E:\\BACKUP\\GRAPHICS",
+      "mode": "safe",
+      "mirror": true,
+      "operation_policy": "mirror_hard",
+      "include_presets": [
+        "GRAPHICS"
+      ],
+      "exclude_presets": [
+        "TEMP"
+      ],
+      "exclude_dirs": [
+        "cache",
+        "preview",
+        "tmp"
+      ],
+      "sync_kind": "backup"
+    },
+    {
+      "name": "video_backup",
+      "source": "D:\\SOURCE\\VIDEO",
+      "target": "E:\\BACKUP\\VIDEO",
+      "mode": "safe",
+      "mirror": true,
+      "operation_policy": "mirror_hard",
+      "include_presets": [
+        "VIDEO"
+      ],
+      "exclude_presets": [
+        "TEMP"
+      ],
+      "exclude_dirs": [
+        "Proxy",
+        "Render Cache",
+        "Cache"
+      ],
+      "sync_kind": "backup"
+    },
+    {
+      "name": "audio_backup",
+      "source": "D:\\SOURCE\\AUDIO",
+      "target": "E:\\BACKUP\\AUDIO",
+      "mode": "safe",
+      "mirror": true,
+      "operation_policy": "mirror_hard",
+      "include_presets": [
+        "AUDIO"
+      ],
+      "exclude_presets": [
+        "TEMP"
+      ],
+      "exclude_dirs": [
+        "cache",
+        "temp"
+      ],
+      "sync_kind": "backup"
+    },
+    {
+      "name": "arch_backup",
+      "source": "D:\\SOURCE\\ARCH",
+      "target": "E:\\BACKUP\\ARCH",
+      "mode": "safe",
+      "mirror": true,
+      "operation_policy": "mirror_hard",
+      "include_presets": [
+        "ARCH"
+      ],
+      "exclude_presets": [
+        "TEMP"
+      ],
+      "exclude_dirs": [
+        "tmp"
+      ],
+      "sync_kind": "backup"
+    },
+    {
+      "name": "apps_backup",
+      "source": "D:\\SOURCE\\APPS",
+      "target": "E:\\BACKUP\\APPS",
+      "mode": "safe",
+      "mirror": true,
+      "operation_policy": "mirror_hard",
+      "include_presets": [
+        "APPS"
+      ],
+      "exclude_presets": [
+        "TEMP"
+      ],
+      "exclude_dirs": [
+        "cache",
+        "logs",
+        "temp"
+      ],
+      "sync_kind": "backup"
+    }
+  ]
+}

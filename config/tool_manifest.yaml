@@ -1,0 +1,1776 @@
+tool:
+  id: audion_disk_auditor
+  name: Audion Disk Tools
+  category: Disk tools
+  version: 1.0.0-gui
+paths:
+  input: input
+  output: output
+  logs: logs
+  report: report
+  workspace: workspace
+  config: config
+  release: release
+ui:
+  title: Audion Disk Tools
+  host: 127.0.0.1
+  port: 8080
+  native: false
+  reload: false
+  open_browser: false
+operations:
+  - id: info
+    title: Project info
+    title_ru: Информация о проекте
+    description: Show CLI runtime and config paths.
+    description_ru: Показать runtime CLI и пути конфигурации.
+    service: system_core.services.disk_auditor_service:run_info
+    kind: safe
+    parameters: {}
+operation_groups:
+  - id: manual_backup_apply
+    title: FOLDER TO FOLDER
+    title_ru: ПАПКА В ПАПКУ
+    description: 'One source, one target, one of four operations: backup mirror, one-way, two-way, or a comparison report.
+      They ran the same service through the same fields and differed by a single word, so they were three sections.
+      This is the auditor''s own run — BLAKE3 comparison, the quarantine policy and the comparison report,
+      none of which the transfer builder does. For a list of machines, clouds or a server, use DATA TRANSFER.'
+    description_ru: 'Источник, приёмник и одна из четырёх операций: зеркало, односторонняя, двусторонняя или отчёт о расхождениях.
+      Все они работали одним сервисом через одни поля и отличались единственным словом — потому и были тремя разделами.
+      Это прогон самого аудитора: сверка BLAKE3, карантин и отчёт о расхождениях, чего трансфер не делает.
+      Список машин, облака и сервер — в разделе ТРАНСФЕР ДАННЫХ.'
+    service: system_core.services.disk_auditor_service:run_manual_command
+    kind: dangerous
+    parameters:
+      extension_groups: &id001
+        microsoft_office:
+          - '*.accdb'
+          - '*.doc'
+          - '*.docx'
+          - '*.oft'
+          - '*.one'
+          - '*.onetoc2'
+          - '*.ppt'
+          - '*.pptx'
+          - '*.pub'
+          - '*.vsd'
+          - '*.xls'
+          - '*.xlsx'
+        text_markup:
+          - '*.cfg'
+          - '*.csv'
+          - '*.dif'
+          - '*.htm'
+          - '*.html'
+          - '*.ini'
+          - '*.markdown'
+          - '*.md'
+          - '*.mht'
+          - '*.rtf'
+          - '*.tab'
+          - '*.txt'
+          - '*.xml'
+        document_viewers:
+          - '*.chm'
+          - '*.djv'
+          - '*.djvu'
+          - '*.pdf'
+          - '*.xps'
+        playlists_cues:
+          - '*.cue'
+          - '*.fpl'
+          - '*.m3u'
+          - '*.m3u8'
+        print_plot:
+          - '*.plt'
+          - '*.prn'
+        python_notebooks:
+          - '*.ipynb'
+          - '*.py'
+          - '*.pyw'
+        shell_scripts:
+          - '*.bash'
+          - '*.bat'
+          - '*.cmd'
+          - '*.ps1'
+          - '*.psd1'
+          - '*.psm1'
+          - '*.sh'
+          - '*.zsh'
+        web_frontend:
+          - '*.css'
+          - '*.js'
+          - '*.jsx'
+          - '*.scss'
+          - '*.ts'
+          - '*.tsx'
+        config_data:
+          - '*.conf'
+          - '*.json'
+          - '*.toml'
+          - '*.yaml'
+          - '*.yml'
+        infrastructure:
+          - '*.hcl'
+          - '*.nix'
+          - '*.sql'
+          - '*.tf'
+          - '*.tfvars'
+        code_languages:
+          - '*.c'
+          - '*.cpp'
+          - '*.cs'
+          - '*.go'
+          - '*.h'
+          - '*.hpp'
+          - '*.java'
+          - '*.kt'
+          - '*.rs'
+          - '*.swift'
+        windows_apps:
+          - '*.com'
+          - '*.cpl'
+          - '*.exe'
+          - '*.msi'
+          - '*.msp'
+          - '*.pif'
+          - '*.scr'
+        shortcuts_links:
+          - '*.lnk'
+          - '*.url'
+        app_scripts:
+          - '*.jar'
+          - '*.vbe'
+          - '*.vbs'
+        app_packages:
+          - '*.app'
+          - '*.bin'
+          - '*.dex'
+          - '*.wgt'
+          - '*.widget'
+        common_archives:
+          - '*.7z'
+          - '*.bz2'
+          - '*.gz'
+          - '*.rar'
+          - '*.tar'
+          - '*.zip'
+        disk_images_packages:
+          - '*.cab'
+          - '*.img'
+          - '*.iso'
+          - '*.nrg'
+          - '*.rpm'
+          - '*.tib'
+        split_legacy_archives:
+          - '*.a0?'
+          - '*.a1?'
+          - '*.ace'
+          - '*.arj'
+          - '*.cpio'
+          - '*.lha'
+          - '*.lzh'
+          - '*.r0?'
+          - '*.r1?'
+          - '*.r2?'
+          - '*.r3?'
+          - '*.r4?'
+          - '*.r5?'
+          - '*.r6?'
+          - '*.r7?'
+          - '*.r8?'
+          - '*.r9?'
+          - '*.uc2'
+          - '*.z'
+          - '*.zoo'
+          - '*.zz'
+        audio_lossless:
+          - '*.aif'
+          - '*.aifc'
+          - '*.aiff'
+          - '*.alac'
+          - '*.ape'
+          - '*.caf'
+          - '*.flac'
+          - '*.tak'
+          - '*.tta'
+          - '*.wav'
+          - '*.wv'
+        audio_common_compressed:
+          - '*.aac'
+          - '*.aax'
+          - '*.m4a'
+          - '*.m4b'
+          - '*.m4p'
+          - '*.m4r'
+          - '*.mp1'
+          - '*.mp2'
+          - '*.mp3'
+          - '*.mpga'
+          - '*.oga'
+          - '*.ogg'
+          - '*.opus'
+          - '*.wma'
+        audio_multichannel_voice:
+          - '*.ac3'
+          - '*.amr'
+          - '*.dts'
+          - '*.eac3'
+          - '*.mka'
+          - '*.mogg'
+          - '*.vox'
+        audio_midi_tracker:
+          - '*.mid'
+          - '*.midi'
+          - '*.mod'
+          - '*.s3m'
+          - '*.sid'
+          - '*.snd'
+          - '*.spc'
+          - '*.voc'
+          - '*.xm'
+        audio_legacy:
+          - '*.cda'
+          - '*.movpkg'
+          - '*.mpa'
+          - '*.mpc'
+          - '*.ra'
+          - '*.ram'
+          - '*.rm'
+          - '*.rmi'
+          - '*.rmx'
+          - '*.rv'
+        video_modern:
+          - '*.mkv'
+          - '*.mov'
+          - '*.mp4'
+          - '*.mxf'
+          - '*.webm'
+        video_common_legacy:
+          - '*.asf'
+          - '*.avi'
+          - '*.divx'
+          - '*.m4v'
+          - '*.mpe'
+          - '*.mpeg'
+          - '*.mpg'
+          - '*.wmv'
+        video_transport_dvd:
+          - '*.ifo'
+          - '*.m2p'
+          - '*.m2s'
+          - '*.m2t'
+          - '*.m2ts'
+          - '*.m2v'
+          - '*.mts'
+          - '*.vob'
+        video_web_mobile:
+          - '*.3g2'
+          - '*.3gp'
+          - '*.3gp2'
+          - '*.3gpp'
+          - '*.3gpp2'
+          - '*.3mm'
+          - '*.amv'
+          - '*.dv'
+          - '*.f4v'
+          - '*.flv'
+          - '*.ogm'
+          - '*.ogv'
+        video_codecs_subtitles:
+          - '*.av1'
+          - '*.avif'
+          - '*.heif'
+          - '*.m1v'
+          - '*.srt'
+          - '*.vp9'
+        graphics_common:
+          - '*.ani'
+          - '*.bmp'
+          - '*.cur'
+          - '*.dib'
+          - '*.gif'
+          - '*.heic'
+          - '*.ico'
+          - '*.jpeg'
+          - '*.jpg'
+          - '*.jxl'
+          - '*.png'
+          - '*.rle'
+          - '*.webp'
+        graphics_print_design:
+          - '*.dpx'
+          - '*.emf'
+          - '*.eps'
+          - '*.exr'
+          - '*.hdr'
+          - '*.psd'
+          - '*.svg'
+          - '*.svgz'
+          - '*.tif'
+          - '*.tiff'
+          - '*.wmf'
+        graphics_camera_raw:
+          - '*.3fr'
+          - '*.ari'
+          - '*.arw'
+          - '*.bay'
+          - '*.braw'
+          - '*.cap'
+          - '*.cr2'
+          - '*.cr3'
+          - '*.crw'
+          - '*.data'
+          - '*.dcr'
+          - '*.dcs'
+          - '*.dng'
+          - '*.drf'
+          - '*.eip'
+          - '*.erf'
+          - '*.fff'
+          - '*.gpr'
+          - '*.iiq'
+          - '*.k25'
+          - '*.kdc'
+          - '*.mdc'
+          - '*.mef'
+          - '*.mos'
+          - '*.mrw'
+          - '*.nef'
+          - '*.nrw'
+          - '*.obm'
+          - '*.orf'
+          - '*.pef'
+          - '*.ptx'
+          - '*.pxn'
+          - '*.r3d'
+          - '*.raf'
+          - '*.raw'
+          - '*.rw2'
+          - '*.rwl'
+          - '*.rwz'
+          - '*.sr2'
+          - '*.srf'
+          - '*.srw'
+          - '*.x3f'
+        graphics_fonts:
+          - '*.afm'
+          - '*.otf'
+          - '*.pfb'
+          - '*.pfm'
+          - '*.ttf'
+        graphics_assets:
+          - '*.abr'
+          - '*.atn'
+          - '*.grd'
+        graphics_cad_legacy:
+          - '*.dwg'
+          - '*.icl'
+          - '*.icn'
+          - '*.pbm'
+          - '*.pcd'
+          - '*.pcx'
+          - '*.pgm'
+          - '*.pic'
+          - '*.pix'
+          - '*.tga'
+          - '*.wor'
+          - '*.xbm'
+          - '*.xif'
+          - '*.xpm'
+      cli_command: backup
+      dry_run: false
+    fields: &id002
+      - id: source_dir
+        type: path_history
+        label: Source
+        label_ru: Источник
+        span: full
+        default: ''
+        role: source
+        hint: Type a path, pick a folder, or choose a frequent source from history.
+        hint_ru: Введите путь, выберите папку мышью или возьмите частый источник из истории.
+      - id: target_dir
+        type: path_history
+        label: Target
+        label_ru: Приёмник
+        span: full
+        default: ''
+        role: target
+        hint: Type a path, pick a folder, or choose a frequent target from history.
+        hint_ru: Введите путь, выберите папку мышью или возьмите частый приёмник из истории.
+      - &compare_mode_field
+        id: mode
+        type: mode_buttons
+        label: Compare mode
+        label_ru: Режим сравнения
+        span: full
+        tooltip: "Choose how source and target files are compared before copy/mirror actions."
+        tooltip_ru: "Выберите, как сравнивать файлы источника и приёмника перед копированием или mirror."
+        default: safe
+        options:
+          - value: quick
+            label: QUICK
+            label_ru: БЫСТРО
+            tooltip: "Fast metadata pass: size and modification time only. Best for a first scan of large trees."
+            tooltip_ru: "Быстро: сравнение только по размеру и времени изменения. Хорошо для первичного прохода по большим деревьям."
+          - value: safe
+            label: SAFE
+            label_ru: НАДЁЖНО
+            tooltip: "Default cautious mode: checks size/time first, then hashes equal-size files when timestamps differ."
+            tooltip_ru: "Штатно и осторожно: размер и время проверяются быстро, а файлы одинакового размера с разным временем дополнительно сверяются по хешу."
+      - &manual_extension_field
+        id: manual_extensions
+        type: checkboxes
+        label: Extension override
+        label_ru: Фильтр расширений
+        hint: Empty selection means no manual mask override. Group checkboxes expand to --mask-globs.
+        hint_ru: Пустой выбор не добавляет ручной фильтр. Группы сверху разворачиваются в --mask-globs.
+        span: full
+        default: []
+        quick_groups_label: Quick groups
+        quick_groups_label_ru: Быстрые группы
+        quick_groups:
+          - value: '@group:microsoft_office'
+            label: Microsoft Office
+            label_ru: Microsoft Office
+          - value: '@group:text_markup'
+            label: Text / Markdown / RTF
+            label_ru: TXT / MD / RTF
+          - value: '@group:document_viewers'
+            label: PDF and viewers
+            label_ru: PDF и viewer-форматы
+          - value: '@group:playlists_cues'
+            label: Playlists and cues
+            label_ru: Плейлисты и cue
+          - value: '@group:print_plot'
+            label: Print and plot
+            label_ru: Печать и plot
+          - value: '@group:python_notebooks'
+            label: Python and notebooks
+            label_ru: Python и notebooks
+          - value: '@group:shell_scripts'
+            label: Shell / PowerShell / CMD
+            label_ru: Shell / PowerShell / CMD
+          - value: '@group:web_frontend'
+            label: Web / JS / TS
+            label_ru: Web / JS / TS
+          - value: '@group:config_data'
+            label: Config and data
+            label_ru: Конфиги и data
+          - value: '@group:infrastructure'
+            label: Infrastructure
+            label_ru: Infrastructure
+          - value: '@group:code_languages'
+            label: Code languages
+            label_ru: Языки кода
+          - value: '@group:windows_apps'
+            label: Windows apps and installers
+            label_ru: Windows apps и installers
+          - value: '@group:shortcuts_links'
+            label: Shortcuts and links
+            label_ru: Ярлыки и ссылки
+          - value: '@group:app_scripts'
+            label: App scripts
+            label_ru: Скрипты приложений
+          - value: '@group:app_packages'
+            label: Packages / widgets / binary
+            label_ru: Packages / widgets / binary
+          - value: '@group:common_archives'
+            label: Common archives
+            label_ru: Привычные архивы
+          - value: '@group:disk_images_packages'
+            label: Disk images and packages
+            label_ru: Образы дисков и packages
+          - value: '@group:split_legacy_archives'
+            label: Split and legacy archives
+            label_ru: Split и legacy архивы
+          - value: '@group:audio_lossless'
+            label: Lossless and studio audio
+            label_ru: Lossless и studio audio
+          - value: '@group:audio_common_compressed'
+            label: Common compressed audio
+            label_ru: Привычное сжатое audio
+          - value: '@group:audio_multichannel_voice'
+            label: Multichannel and voice
+            label_ru: Multichannel и voice
+          - value: '@group:audio_midi_tracker'
+            label: MIDI / tracker / chip
+            label_ru: MIDI / tracker / chip
+          - value: '@group:audio_legacy'
+            label: Legacy audio
+            label_ru: Legacy audio
+          - value: '@group:video_modern'
+            label: Modern containers
+            label_ru: Современные containers
+          - value: '@group:video_common_legacy'
+            label: Common and legacy video
+            label_ru: Привычное и legacy video
+          - value: '@group:video_transport_dvd'
+            label: Transport streams and DVD
+            label_ru: Transport streams и DVD
+          - value: '@group:video_web_mobile'
+            label: Web and mobile video
+            label_ru: Web и mobile video
+          - value: '@group:video_codecs_subtitles'
+            label: Codecs / stills / subtitles
+            label_ru: Codecs / stills / subtitles
+          - value: '@group:graphics_common'
+            label: Common rasters and web
+            label_ru: Привычные rasters и web
+          - value: '@group:graphics_print_design'
+            label: Print / vector / design
+            label_ru: Print / vector / design
+          - value: '@group:graphics_camera_raw'
+            label: Camera RAW
+            label_ru: Camera RAW
+          - value: '@group:graphics_fonts'
+            label: Fonts
+            label_ru: Fonts
+          - value: '@group:graphics_assets'
+            label: Brushes and assets
+            label_ru: Brushes и assets
+          - value: '@group:graphics_cad_legacy'
+            label: CAD and legacy graphics
+            label_ru: CAD и legacy graphics
+        groups:
+          - id: microsoft_office
+            label: Microsoft Office
+            label_ru: Microsoft Office
+            options:
+              - value: '*.accdb'
+                label: .accdb
+                label_ru: .accdb
+              - value: '*.doc'
+                label: .doc
+                label_ru: .doc
+              - value: '*.docx'
+                label: .docx
+                label_ru: .docx
+              - value: '*.oft'
+                label: .oft
+                label_ru: .oft
+              - value: '*.one'
+                label: .one
+                label_ru: .one
+              - value: '*.onetoc2'
+                label: .onetoc2
+                label_ru: .onetoc2
+              - value: '*.ppt'
+                label: .ppt
+                label_ru: .ppt
+              - value: '*.pptx'
+                label: .pptx
+                label_ru: .pptx
+              - value: '*.pub'
+                label: .pub
+                label_ru: .pub
+              - value: '*.vsd'
+                label: .vsd
+                label_ru: .vsd
+              - value: '*.xls'
+                label: .xls
+                label_ru: .xls
+              - value: '*.xlsx'
+                label: .xlsx
+                label_ru: .xlsx
+          - id: text_markup
+            label: Text / Markdown / RTF
+            label_ru: TXT / MD / RTF
+            options:
+              - value: '*.cfg'
+                label: .cfg
+                label_ru: .cfg
+              - value: '*.csv'
+                label: .csv
+                label_ru: .csv
+              - value: '*.dif'
+                label: .dif
+                label_ru: .dif
+              - value: '*.htm'
+                label: .htm
+                label_ru: .htm
+              - value: '*.html'
+                label: .html
+                label_ru: .html
+              - value: '*.ini'
+                label: .ini
+                label_ru: .ini
+              - value: '*.markdown'
+                label: .markdown
+                label_ru: .markdown
+              - value: '*.md'
+                label: .md
+                label_ru: .md
+              - value: '*.mht'
+                label: .mht
+                label_ru: .mht
+              - value: '*.rtf'
+                label: .rtf
+                label_ru: .rtf
+              - value: '*.tab'
+                label: .tab
+                label_ru: .tab
+              - value: '*.txt'
+                label: .txt
+                label_ru: .txt
+              - value: '*.xml'
+                label: .xml
+                label_ru: .xml
+          - id: document_viewers
+            label: PDF and viewers
+            label_ru: PDF и viewer-форматы
+            options:
+              - value: '*.chm'
+                label: .chm
+                label_ru: .chm
+              - value: '*.djv'
+                label: .djv
+                label_ru: .djv
+              - value: '*.djvu'
+                label: .djvu
+                label_ru: .djvu
+              - value: '*.pdf'
+                label: .pdf
+                label_ru: .pdf
+              - value: '*.xps'
+                label: .xps
+                label_ru: .xps
+          - id: playlists_cues
+            label: Playlists and cues
+            label_ru: Плейлисты и cue
+            options:
+              - value: '*.cue'
+                label: .cue
+                label_ru: .cue
+              - value: '*.fpl'
+                label: .fpl
+                label_ru: .fpl
+              - value: '*.m3u'
+                label: .m3u
+                label_ru: .m3u
+              - value: '*.m3u8'
+                label: .m3u8
+                label_ru: .m3u8
+          - id: print_plot
+            label: Print and plot
+            label_ru: Печать и plot
+            options:
+              - value: '*.plt'
+                label: .plt
+                label_ru: .plt
+              - value: '*.prn'
+                label: .prn
+                label_ru: .prn
+          - id: python_notebooks
+            label: Python and notebooks
+            label_ru: Python и notebooks
+            options:
+              - value: '*.ipynb'
+                label: .ipynb
+                label_ru: .ipynb
+              - value: '*.py'
+                label: .py
+                label_ru: .py
+              - value: '*.pyw'
+                label: .pyw
+                label_ru: .pyw
+          - id: shell_scripts
+            label: Shell / PowerShell / CMD
+            label_ru: Shell / PowerShell / CMD
+            options:
+              - value: '*.bash'
+                label: .bash
+                label_ru: .bash
+              - value: '*.bat'
+                label: .bat
+                label_ru: .bat
+              - value: '*.cmd'
+                label: .cmd
+                label_ru: .cmd
+              - value: '*.ps1'
+                label: .ps1
+                label_ru: .ps1
+              - value: '*.psd1'
+                label: .psd1
+                label_ru: .psd1
+              - value: '*.psm1'
+                label: .psm1
+                label_ru: .psm1
+              - value: '*.sh'
+                label: .sh
+                label_ru: .sh
+              - value: '*.zsh'
+                label: .zsh
+                label_ru: .zsh
+          - id: web_frontend
+            label: Web / JS / TS
+            label_ru: Web / JS / TS
+            options:
+              - value: '*.css'
+                label: .css
+                label_ru: .css
+              - value: '*.js'
+                label: .js
+                label_ru: .js
+              - value: '*.jsx'
+                label: .jsx
+                label_ru: .jsx
+              - value: '*.scss'
+                label: .scss
+                label_ru: .scss
+              - value: '*.ts'
+                label: .ts
+                label_ru: .ts
+              - value: '*.tsx'
+                label: .tsx
+                label_ru: .tsx
+          - id: config_data
+            label: Config and data
+            label_ru: Конфиги и data
+            options:
+              - value: '*.conf'
+                label: .conf
+                label_ru: .conf
+              - value: '*.json'
+                label: .json
+                label_ru: .json
+              - value: '*.toml'
+                label: .toml
+                label_ru: .toml
+              - value: '*.yaml'
+                label: .yaml
+                label_ru: .yaml
+              - value: '*.yml'
+                label: .yml
+                label_ru: .yml
+          - id: infrastructure
+            label: Infrastructure
+            label_ru: Infrastructure
+            options:
+              - value: '*.hcl'
+                label: .hcl
+                label_ru: .hcl
+              - value: '*.nix'
+                label: .nix
+                label_ru: .nix
+              - value: '*.sql'
+                label: .sql
+                label_ru: .sql
+              - value: '*.tf'
+                label: .tf
+                label_ru: .tf
+              - value: '*.tfvars'
+                label: .tfvars
+                label_ru: .tfvars
+          - id: code_languages
+            label: Code languages
+            label_ru: Языки кода
+            options:
+              - value: '*.c'
+                label: .c
+                label_ru: .c
+              - value: '*.cpp'
+                label: .cpp
+                label_ru: .cpp
+              - value: '*.cs'
+                label: .cs
+                label_ru: .cs
+              - value: '*.go'
+                label: .go
+                label_ru: .go
+              - value: '*.h'
+                label: .h
+                label_ru: .h
+              - value: '*.hpp'
+                label: .hpp
+                label_ru: .hpp
+              - value: '*.java'
+                label: .java
+                label_ru: .java
+              - value: '*.kt'
+                label: .kt
+                label_ru: .kt
+              - value: '*.rs'
+                label: .rs
+                label_ru: .rs
+              - value: '*.swift'
+                label: .swift
+                label_ru: .swift
+          - id: windows_apps
+            label: Windows apps and installers
+            label_ru: Windows apps и installers
+            options:
+              - value: '*.com'
+                label: .com
+                label_ru: .com
+              - value: '*.cpl'
+                label: .cpl
+                label_ru: .cpl
+              - value: '*.exe'
+                label: .exe
+                label_ru: .exe
+              - value: '*.msi'
+                label: .msi
+                label_ru: .msi
+              - value: '*.msp'
+                label: .msp
+                label_ru: .msp
+              - value: '*.pif'
+                label: .pif
+                label_ru: .pif
+              - value: '*.scr'
+                label: .scr
+                label_ru: .scr
+          - id: shortcuts_links
+            label: Shortcuts and links
+            label_ru: Ярлыки и ссылки
+            options:
+              - value: '*.lnk'
+                label: .lnk
+                label_ru: .lnk
+              - value: '*.url'
+                label: .url
+                label_ru: .url
+          - id: app_scripts
+            label: App scripts
+            label_ru: Скрипты приложений
+            options:
+              - value: '*.jar'
+                label: .jar
+                label_ru: .jar
+              - value: '*.vbe'
+                label: .vbe
+                label_ru: .vbe
+              - value: '*.vbs'
+                label: .vbs
+                label_ru: .vbs
+          - id: app_packages
+            label: Packages / widgets / binary
+            label_ru: Packages / widgets / binary
+            options:
+              - value: '*.app'
+                label: .app
+                label_ru: .app
+              - value: '*.bin'
+                label: .bin
+                label_ru: .bin
+              - value: '*.dex'
+                label: .dex
+                label_ru: .dex
+              - value: '*.wgt'
+                label: .wgt
+                label_ru: .wgt
+              - value: '*.widget'
+                label: .widget
+                label_ru: .widget
+          - id: common_archives
+            label: Common archives
+            label_ru: Привычные архивы
+            options:
+              - value: '*.7z'
+                label: .7z
+                label_ru: .7z
+              - value: '*.bz2'
+                label: .bz2
+                label_ru: .bz2
+              - value: '*.gz'
+                label: .gz
+                label_ru: .gz
+              - value: '*.rar'
+                label: .rar
+                label_ru: .rar
+              - value: '*.tar'
+                label: .tar
+                label_ru: .tar
+              - value: '*.zip'
+                label: .zip
+                label_ru: .zip
+          - id: disk_images_packages
+            label: Disk images and packages
+            label_ru: Образы дисков и packages
+            options:
+              - value: '*.cab'
+                label: .cab
+                label_ru: .cab
+              - value: '*.img'
+                label: .img
+                label_ru: .img
+              - value: '*.iso'
+                label: .iso
+                label_ru: .iso
+              - value: '*.nrg'
+                label: .nrg
+                label_ru: .nrg
+              - value: '*.rpm'
+                label: .rpm
+                label_ru: .rpm
+              - value: '*.tib'
+                label: .tib
+                label_ru: .tib
+          - id: split_legacy_archives
+            label: Split and legacy archives
+            label_ru: Split и legacy архивы
+            options:
+              - value: '*.a0?'
+                label: .a0?
+                label_ru: .a0?
+              - value: '*.a1?'
+                label: .a1?
+                label_ru: .a1?
+              - value: '*.ace'
+                label: .ace
+                label_ru: .ace
+              - value: '*.arj'
+                label: .arj
+                label_ru: .arj
+              - value: '*.cpio'
+                label: .cpio
+                label_ru: .cpio
+              - value: '*.lha'
+                label: .lha
+                label_ru: .lha
+              - value: '*.lzh'
+                label: .lzh
+                label_ru: .lzh
+              - value: '*.r0?'
+                label: .r0?
+                label_ru: .r0?
+              - value: '*.r1?'
+                label: .r1?
+                label_ru: .r1?
+              - value: '*.r2?'
+                label: .r2?
+                label_ru: .r2?
+              - value: '*.r3?'
+                label: .r3?
+                label_ru: .r3?
+              - value: '*.r4?'
+                label: .r4?
+                label_ru: .r4?
+              - value: '*.r5?'
+                label: .r5?
+                label_ru: .r5?
+              - value: '*.r6?'
+                label: .r6?
+                label_ru: .r6?
+              - value: '*.r7?'
+                label: .r7?
+                label_ru: .r7?
+              - value: '*.r8?'
+                label: .r8?
+                label_ru: .r8?
+              - value: '*.r9?'
+                label: .r9?
+                label_ru: .r9?
+              - value: '*.uc2'
+                label: .uc2
+                label_ru: .uc2
+              - value: '*.z'
+                label: .z
+                label_ru: .z
+              - value: '*.zoo'
+                label: .zoo
+                label_ru: .zoo
+              - value: '*.zz'
+                label: .zz
+                label_ru: .zz
+          - id: audio_lossless
+            label: Lossless and studio audio
+            label_ru: Lossless и studio audio
+            options:
+              - value: '*.aif'
+                label: .aif
+                label_ru: .aif
+              - value: '*.aifc'
+                label: .aifc
+                label_ru: .aifc
+              - value: '*.aiff'
+                label: .aiff
+                label_ru: .aiff
+              - value: '*.alac'
+                label: .alac
+                label_ru: .alac
+              - value: '*.ape'
+                label: .ape
+                label_ru: .ape
+              - value: '*.caf'
+                label: .caf
+                label_ru: .caf
+              - value: '*.flac'
+                label: .flac
+                label_ru: .flac
+              - value: '*.tak'
+                label: .tak
+                label_ru: .tak
+              - value: '*.tta'
+                label: .tta
+                label_ru: .tta
+              - value: '*.wav'
+                label: .wav
+                label_ru: .wav
+              - value: '*.wv'
+                label: .wv
+                label_ru: .wv
+          - id: audio_common_compressed
+            label: Common compressed audio
+            label_ru: Привычное сжатое audio
+            options:
+              - value: '*.aac'
+                label: .aac
+                label_ru: .aac
+              - value: '*.aax'
+                label: .aax
+                label_ru: .aax
+              - value: '*.m4a'
+                label: .m4a
+                label_ru: .m4a
+              - value: '*.m4b'
+                label: .m4b
+                label_ru: .m4b
+              - value: '*.m4p'
+                label: .m4p
+                label_ru: .m4p
+              - value: '*.m4r'
+                label: .m4r
+                label_ru: .m4r
+              - value: '*.mp1'
+                label: .mp1
+                label_ru: .mp1
+              - value: '*.mp2'
+                label: .mp2
+                label_ru: .mp2
+              - value: '*.mp3'
+                label: .mp3
+                label_ru: .mp3
+              - value: '*.mpga'
+                label: .mpga
+                label_ru: .mpga
+              - value: '*.oga'
+                label: .oga
+                label_ru: .oga
+              - value: '*.ogg'
+                label: .ogg
+                label_ru: .ogg
+              - value: '*.opus'
+                label: .opus
+                label_ru: .opus
+              - value: '*.wma'
+                label: .wma
+                label_ru: .wma
+          - id: audio_multichannel_voice
+            label: Multichannel and voice
+            label_ru: Multichannel и voice
+            options:
+              - value: '*.ac3'
+                label: .ac3
+                label_ru: .ac3
+              - value: '*.amr'
+                label: .amr
+                label_ru: .amr
+              - value: '*.dts'
+                label: .dts
+                label_ru: .dts
+              - value: '*.eac3'
+                label: .eac3
+                label_ru: .eac3
+              - value: '*.mka'
+                label: .mka
+                label_ru: .mka
+              - value: '*.mogg'
+                label: .mogg
+                label_ru: .mogg
+              - value: '*.vox'
+                label: .vox
+                label_ru: .vox
+          - id: audio_midi_tracker
+            label: MIDI / tracker / chip
+            label_ru: MIDI / tracker / chip
+            options:
+              - value: '*.mid'
+                label: .mid
+                label_ru: .mid
+              - value: '*.midi'
+                label: .midi
+                label_ru: .midi
+              - value: '*.mod'
+                label: .mod
+                label_ru: .mod
+              - value: '*.s3m'
+                label: .s3m
+                label_ru: .s3m
+              - value: '*.sid'
+                label: .sid
+                label_ru: .sid
+              - value: '*.snd'
+                label: .snd
+                label_ru: .snd
+              - value: '*.spc'
+                label: .spc
+                label_ru: .spc
+              - value: '*.voc'
+                label: .voc
+                label_ru: .voc
+              - value: '*.xm'
+                label: .xm
+                label_ru: .xm
+          - id: audio_legacy
+            label: Legacy audio
+            label_ru: Legacy audio
+            options:
+              - value: '*.cda'
+                label: .cda
+                label_ru: .cda
+              - value: '*.movpkg'
+                label: .movpkg
+                label_ru: .movpkg
+              - value: '*.mpa'
+                label: .mpa
+                label_ru: .mpa
+              - value: '*.mpc'
+                label: .mpc
+                label_ru: .mpc
+              - value: '*.ra'
+                label: .ra
+                label_ru: .ra
+              - value: '*.ram'
+                label: .ram
+                label_ru: .ram
+              - value: '*.rm'
+                label: .rm
+                label_ru: .rm
+              - value: '*.rmi'
+                label: .rmi
+                label_ru: .rmi
+              - value: '*.rmx'
+                label: .rmx
+                label_ru: .rmx
+              - value: '*.rv'
+                label: .rv
+                label_ru: .rv
+          - id: video_modern
+            label: Modern containers
+            label_ru: Современные containers
+            options:
+              - value: '*.mkv'
+                label: .mkv
+                label_ru: .mkv
+              - value: '*.mov'
+                label: .mov
+                label_ru: .mov
+              - value: '*.mp4'
+                label: .mp4
+                label_ru: .mp4
+              - value: '*.mxf'
+                label: .mxf
+                label_ru: .mxf
+              - value: '*.webm'
+                label: .webm
+                label_ru: .webm
+          - id: video_common_legacy
+            label: Common and legacy video
+            label_ru: Привычное и legacy video
+            options:
+              - value: '*.asf'
+                label: .asf
+                label_ru: .asf
+              - value: '*.avi'
+                label: .avi
+                label_ru: .avi
+              - value: '*.divx'
+                label: .divx
+                label_ru: .divx
+              - value: '*.m4v'
+                label: .m4v
+                label_ru: .m4v
+              - value: '*.mpe'
+                label: .mpe
+                label_ru: .mpe
+              - value: '*.mpeg'
+                label: .mpeg
+                label_ru: .mpeg
+              - value: '*.mpg'
+                label: .mpg
+                label_ru: .mpg
+              - value: '*.wmv'
+                label: .wmv
+                label_ru: .wmv
+          - id: video_transport_dvd
+            label: Transport streams and DVD
+            label_ru: Transport streams и DVD
+            options:
+              - value: '*.ifo'
+                label: .ifo
+                label_ru: .ifo
+              - value: '*.m2p'
+                label: .m2p
+                label_ru: .m2p
+              - value: '*.m2s'
+                label: .m2s
+                label_ru: .m2s
+              - value: '*.m2t'
+                label: .m2t
+                label_ru: .m2t
+              - value: '*.m2ts'
+                label: .m2ts
+                label_ru: .m2ts
+              - value: '*.m2v'
+                label: .m2v
+                label_ru: .m2v
+              - value: '*.mts'
+                label: .mts
+                label_ru: .mts
+              - value: '*.vob'
+                label: .vob
+                label_ru: .vob
+          - id: video_web_mobile
+            label: Web and mobile video
+            label_ru: Web и mobile video
+            options:
+              - value: '*.3g2'
+                label: .3g2
+                label_ru: .3g2
+              - value: '*.3gp'
+                label: .3gp
+                label_ru: .3gp
+              - value: '*.3gp2'
+                label: .3gp2
+                label_ru: .3gp2
+              - value: '*.3gpp'
+                label: .3gpp
+                label_ru: .3gpp
+              - value: '*.3gpp2'
+                label: .3gpp2
+                label_ru: .3gpp2
+              - value: '*.3mm'
+                label: .3mm
+                label_ru: .3mm
+              - value: '*.amv'
+                label: .amv
+                label_ru: .amv
+              - value: '*.dv'
+                label: .dv
+                label_ru: .dv
+              - value: '*.f4v'
+                label: .f4v
+                label_ru: .f4v
+              - value: '*.flv'
+                label: .flv
+                label_ru: .flv
+              - value: '*.ogm'
+                label: .ogm
+                label_ru: .ogm
+              - value: '*.ogv'
+                label: .ogv
+                label_ru: .ogv
+          - id: video_codecs_subtitles
+            label: Codecs / stills / subtitles
+            label_ru: Codecs / stills / subtitles
+            options:
+              - value: '*.av1'
+                label: .av1
+                label_ru: .av1
+              - value: '*.avif'
+                label: .avif
+                label_ru: .avif
+              - value: '*.heif'
+                label: .heif
+                label_ru: .heif
+              - value: '*.m1v'
+                label: .m1v
+                label_ru: .m1v
+              - value: '*.srt'
+                label: .srt
+                label_ru: .srt
+              - value: '*.vp9'
+                label: .vp9
+                label_ru: .vp9
+          - id: graphics_common
+            label: Common rasters and web
+            label_ru: Привычные rasters и web
+            options:
+              - value: '*.ani'
+                label: .ani
+                label_ru: .ani
+              - value: '*.bmp'
+                label: .bmp
+                label_ru: .bmp
+              - value: '*.cur'
+                label: .cur
+                label_ru: .cur
+              - value: '*.dib'
+                label: .dib
+                label_ru: .dib
+              - value: '*.gif'
+                label: .gif
+                label_ru: .gif
+              - value: '*.heic'
+                label: .heic
+                label_ru: .heic
+              - value: '*.ico'
+                label: .ico
+                label_ru: .ico
+              - value: '*.jpeg'
+                label: .jpeg
+                label_ru: .jpeg
+              - value: '*.jpg'
+                label: .jpg
+                label_ru: .jpg
+              - value: '*.jxl'
+                label: .jxl
+                label_ru: .jxl
+              - value: '*.png'
+                label: .png
+                label_ru: .png
+              - value: '*.rle'
+                label: .rle
+                label_ru: .rle
+              - value: '*.webp'
+                label: .webp
+                label_ru: .webp
+          - id: graphics_print_design
+            label: Print / vector / design
+            label_ru: Print / vector / design
+            options:
+              - value: '*.dpx'
+                label: .dpx
+                label_ru: .dpx
+              - value: '*.emf'
+                label: .emf
+                label_ru: .emf
+              - value: '*.eps'
+                label: .eps
+                label_ru: .eps
+              - value: '*.exr'
+                label: .exr
+                label_ru: .exr
+              - value: '*.hdr'
+                label: .hdr
+                label_ru: .hdr
+              - value: '*.psd'
+                label: .psd
+                label_ru: .psd
+              - value: '*.svg'
+                label: .svg
+                label_ru: .svg
+              - value: '*.svgz'
+                label: .svgz
+                label_ru: .svgz
+              - value: '*.tif'
+                label: .tif
+                label_ru: .tif
+              - value: '*.tiff'
+                label: .tiff
+                label_ru: .tiff
+              - value: '*.wmf'
+                label: .wmf
+                label_ru: .wmf
+          - id: graphics_camera_raw
+            label: Camera RAW
+            label_ru: Camera RAW
+            options:
+              - value: '*.3fr'
+                label: .3fr
+                label_ru: .3fr
+              - value: '*.ari'
+                label: .ari
+                label_ru: .ari
+              - value: '*.arw'
+                label: .arw
+                label_ru: .arw
+              - value: '*.bay'
+                label: .bay
+                label_ru: .bay
+              - value: '*.braw'
+                label: .braw
+                label_ru: .braw
+              - value: '*.cap'
+                label: .cap
+                label_ru: .cap
+              - value: '*.cr2'
+                label: .cr2
+                label_ru: .cr2
+              - value: '*.cr3'
+                label: .cr3
+                label_ru: .cr3
+              - value: '*.crw'
+                label: .crw
+                label_ru: .crw
+              - value: '*.data'
+                label: .data
+                label_ru: .data
+              - value: '*.dcr'
+                label: .dcr
+                label_ru: .dcr
+              - value: '*.dcs'
+                label: .dcs
+                label_ru: .dcs
+              - value: '*.dng'
+                label: .dng
+                label_ru: .dng
+              - value: '*.drf'
+                label: .drf
+                label_ru: .drf
+              - value: '*.eip'
+                label: .eip
+                label_ru: .eip
+              - value: '*.erf'
+                label: .erf
+                label_ru: .erf
+              - value: '*.fff'
+                label: .fff
+                label_ru: .fff
+              - value: '*.gpr'
+                label: .gpr
+                label_ru: .gpr
+              - value: '*.iiq'
+                label: .iiq
+                label_ru: .iiq
+              - value: '*.k25'
+                label: .k25
+                label_ru: .k25
+              - value: '*.kdc'
+                label: .kdc
+                label_ru: .kdc
+              - value: '*.mdc'
+                label: .mdc
+                label_ru: .mdc
+              - value: '*.mef'
+                label: .mef
+                label_ru: .mef
+              - value: '*.mos'
+                label: .mos
+                label_ru: .mos
+              - value: '*.mrw'
+                label: .mrw
+                label_ru: .mrw
+              - value: '*.nef'
+                label: .nef
+                label_ru: .nef
+              - value: '*.nrw'
+                label: .nrw
+                label_ru: .nrw
+              - value: '*.obm'
+                label: .obm
+                label_ru: .obm
+              - value: '*.orf'
+                label: .orf
+                label_ru: .orf
+              - value: '*.pef'
+                label: .pef
+                label_ru: .pef
+              - value: '*.ptx'
+                label: .ptx
+                label_ru: .ptx
+              - value: '*.pxn'
+                label: .pxn
+                label_ru: .pxn
+              - value: '*.r3d'
+                label: .r3d
+                label_ru: .r3d
+              - value: '*.raf'
+                label: .raf
+                label_ru: .raf
+              - value: '*.raw'
+                label: .raw
+                label_ru: .raw
+              - value: '*.rw2'
+                label: .rw2
+                label_ru: .rw2
+              - value: '*.rwl'
+                label: .rwl
+                label_ru: .rwl
+              - value: '*.rwz'
+                label: .rwz
+                label_ru: .rwz
+              - value: '*.sr2'
+                label: .sr2
+                label_ru: .sr2
+              - value: '*.srf'
+                label: .srf
+                label_ru: .srf
+              - value: '*.srw'
+                label: .srw
+                label_ru: .srw
+              - value: '*.x3f'
+                label: .x3f
+                label_ru: .x3f
+          - id: graphics_fonts
+            label: Fonts
+            label_ru: Fonts
+            options:
+              - value: '*.afm'
+                label: .afm
+                label_ru: .afm
+              - value: '*.otf'
+                label: .otf
+                label_ru: .otf
+              - value: '*.pfb'
+                label: .pfb
+                label_ru: .pfb
+              - value: '*.pfm'
+                label: .pfm
+                label_ru: .pfm
+              - value: '*.ttf'
+                label: .ttf
+                label_ru: .ttf
+          - id: graphics_assets
+            label: Brushes and assets
+            label_ru: Brushes и assets
+            options:
+              - value: '*.abr'
+                label: .abr
+                label_ru: .abr
+              - value: '*.atn'
+                label: .atn
+                label_ru: .atn
+              - value: '*.grd'
+                label: .grd
+                label_ru: .grd
+          - id: graphics_cad_legacy
+            label: CAD and legacy graphics
+            label_ru: CAD и legacy graphics
+            options:
+              - value: '*.dwg'
+                label: .dwg
+                label_ru: .dwg
+              - value: '*.icl'
+                label: .icl
+                label_ru: .icl
+              - value: '*.icn'
+                label: .icn
+                label_ru: .icn
+              - value: '*.pbm'
+                label: .pbm
+                label_ru: .pbm
+              - value: '*.pcd'
+                label: .pcd
+                label_ru: .pcd
+              - value: '*.pcx'
+                label: .pcx
+                label_ru: .pcx
+              - value: '*.pgm'
+                label: .pgm
+                label_ru: .pgm
+              - value: '*.pic'
+                label: .pic
+                label_ru: .pic
+              - value: '*.pix'
+                label: .pix
+                label_ru: .pix
+              - value: '*.tga'
+                label: .tga
+                label_ru: .tga
+              - value: '*.wor'
+                label: .wor
+                label_ru: .wor
+              - value: '*.xbm'
+                label: .xbm
+                label_ru: .xbm
+              - value: '*.xif'
+                label: .xif
+                label_ru: .xif
+              - value: '*.xpm'
+                label: .xpm
+                label_ru: .xpm
+  - id: manifest_tools
+    title: Manifest / Diff
+    title_ru: Manifest / Diff
+    description: Build Source -> Target diff lists from the current Workbench paths and apply them safely.
+    description_ru: 'Конвейер Source -> Target по текущим путям Workbench: выбрать расширения, построить Diff и применить его копированием или mirror.'
+    parameters:
+      extension_field: manifest_extensions
+      extension_groups: *id001
+    fields:
+      - id: source_dir
+        type: path_history
+        label: Source
+        label_ru: Источник
+        role: source
+        default: ''
+      - id: target_dir
+        type: path_history
+        label: Target
+        label_ru: Цель
+        role: target
+        default: ''
+      - id: mode
+        type: mode_buttons
+        label: Compare mode
+        label_ru: Режим сравнения
+        span: full
+        tooltip: "Choose how Source and Target manifests are compared before Diff/apply actions."
+        tooltip_ru: "Выберите, как сравнивать Source и Target перед построением Diff и применением маршрута."
+        default: safe
+        options:
+          - value: quick
+            label: QUICK
+            label_ru: БЫСТРО
+            tooltip: "Fast manifest diff: size and modification time decide most matches. Use when speed matters more than deep verification."
+            tooltip_ru: "Быстрый Diff по манифестам: в основном размер и время изменения. Подходит, когда важнее скорость, чем глубокая сверка."
+          - value: strict
+            label: STRICT
+            label_ru: СТРОГО
+            tooltip: "Deepest comparison: hashes equal-size files even when timestamps match. Slowest, but catches quiet content changes."
+            tooltip_ru: "Самая глубокая сверка: хешируются файлы одинакового размера даже при совпавшем времени. Медленнее, зато ловит тихие изменения содержимого."
+          - value: safe
+            label: SAFE
+            label_ru: НАДЁЖНО
+            tooltip: "Default cautious mode: metadata first, hashes only where equal-size files need confirmation."
+            tooltip_ru: "Штатный осторожный режим: сначала метаданные, хеши только там, где файлам одинакового размера нужна проверка."
+      - id: diff_file
+        type: text
+        label: Diff path list override
+        label_ru: Готовый список Diff
+        hint: Optional. Empty value uses the latest list generated by Diff source/target.
+        hint_ru: Необязательно. Пустое значение использует последний список, созданный Diff источника/цели.
+        span: full
+        default: ''
+      - <<: *manual_extension_field
+        id: manifest_extensions
+        label: Manifest extension filter
+        label_ru: Фильтр расширений Manifest/Diff
+        hint: Empty selection scans all files. Selected groups or extensions narrow Diff and Source/Target __CHECKSUMS__.b3 creation.
+        hint_ru: Пустой выбор считает все файлы. Выбранные группы или расширения сужают Diff и создание __CHECKSUMS__.b3 для источника/цели.
+        extension_filter: true
+    children:
+      - id: diff_then_sync_manifest
+        title: Diff + One-Way Sync
+        title_ru: DIFF + ONE-WAY SYNC
+        description: Recalculate Source -> Target diff, then copy/update only files from the fresh one-way diff list. Target-only files stay untouched.
+        description_ru: Пересчитать Diff Source -> Target и сразу скопировать/обновить только файлы из свежего one-way списка. Лишнее в цели не трогается.
+        service: system_core.services.disk_auditor_service:run_manifest_diff_then_apply_command
+        kind: safe
+        parameters:
+          manifest_section: pipeline
+          cli_command: sync
+      - id: diff_then_backup_manifest
+        title: Diff + BACKUP-MIRROR
+        title_ru: DIFF + BACKUP-MIRROR
+        description: Recalculate Source -> Target diff, then mirror only paths from the fresh mirror diff list. Target-only paths inside the diff may be removed.
+        description_ru: Пересчитать Diff Source -> Target и применить mirror только по свежему mirror-списку. Лишние пути цели внутри Diff могут удаляться.
+        service: system_core.services.disk_auditor_service:run_manifest_diff_then_apply_command
+        kind: dangerous
+        parameters:
+          manifest_section: pipeline
+          cli_command: backup
+      - id: diff_source_target_manifest
+        title: Diff source/target
+        title_ru: ТОЛЬКО DIFF
+        description: Build relative-path diff lists for current Source -> Target without changing files.
+        description_ru: Сформировать списки относительных путей различий Source -> Target без изменения файлов.
+        service: system_core.services.disk_auditor_service:run_manifest_diff_command
+        kind: safe
+        parameters:
+          manifest_section: review
+      - id: sync_from_manifest_diff
+        title: One-Way from diff
+        title_ru: ONE-WAY ПО DIFF
+        description: Copy/update only files from the latest one-way diff list. Target-only files stay untouched.
+        description_ru: Скопировать/обновить только файлы из последнего one-way diff-списка. Лишнее в цели не трогается.
+        service: system_core.services.disk_auditor_service:run_manifest_diff_apply_command
+        kind: safe
+        parameters:
+          manifest_section: review
+          cli_command: sync
+      - id: backup_from_manifest_diff
+        title: BACKUP-MIRROR from diff
+        title_ru: BACKUP-MIRROR ПО DIFF
+        description: Apply Source -> Target mirror only inside the latest mirror diff path list.
+        description_ru: Применить Source -> Target mirror только внутри последнего mirror diff-списка путей.
+        service: system_core.services.disk_auditor_service:run_manifest_diff_apply_command
+        kind: dangerous
+        parameters:
+          manifest_section: review
+          cli_command: backup
+      - id: create_source_manifest
+        title: Create source __CHECKSUMS__.b3
+        title_ru: Создать источник
+        description: Create __CHECKSUMS__.b3 inside the current Workbench source. This standalone checksum file is not required for Diff + One-Way.
+        description_ru: Создать __CHECKSUMS__.b3 внутри текущего источника Workbench. Это отдельный checksum-файл, не обязательный для Diff + One-Way.
+        service: system_core.services.disk_auditor_service:run_manifest_command
+        kind: safe
+        parameters:
+          manifest_section: checksums
+          cli_command: manifest
+          root_role: source
+      - id: create_target_manifest
+        title: Create target __CHECKSUMS__.b3
+        title_ru: Создать цель
+        description: Create __CHECKSUMS__.b3 inside the current Workbench target for standalone audit or later verification.
+        description_ru: Создать __CHECKSUMS__.b3 внутри текущей цели Workbench для отдельного аудита или последующей проверки.
+        service: system_core.services.disk_auditor_service:run_manifest_command
+        kind: safe
+        parameters:
+          manifest_section: checksums
+          cli_command: manifest
+          root_role: target
+      - id: verify_source_manifest
+        title: Verify source __CHECKSUMS__.b3
+        title_ru: Проверить источник
+        description: Verify files in the current Workbench source against its __CHECKSUMS__.b3.
+        description_ru: Проверить файлы текущего источника Workbench по его __CHECKSUMS__.b3.
+        service: system_core.services.disk_auditor_service:run_manifest_command
+        kind: safe
+        parameters:
+          manifest_section: checksums
+          cli_command: verify
+          root_role: source
+      - id: verify_target_manifest
+        title: Verify target __CHECKSUMS__.b3
+        title_ru: Проверить цель
+        description: Verify files in the current Workbench target against its __CHECKSUMS__.b3.
+        description_ru: Проверить файлы текущей цели Workbench по её __CHECKSUMS__.b3.
+        service: system_core.services.disk_auditor_service:run_manifest_command
+        kind: safe
+        parameters:
+          manifest_section: checksums
+          cli_command: verify
+          root_role: target
+  - id: diagnostics
+    title: Diagnostics
+    title_ru: Диагностика
+    description: Read-only CLI checks.
+    description_ru: Read-only проверки CLI.
+    children:
+      - id: diag_info
+        title: Project info
+        title_ru: Информация о проекте
+        description: Show CLI runtime and config paths.
+        description_ru: Показать runtime CLI и пути конфигурации.
+        service: system_core.services.disk_auditor_service:run_info
+        kind: safe
+        parameters: {}
+      - id: diag_pairs
+        title: List profiles
+        title_ru: Список профилей
+        description: Print configured sync profiles/pairs.
+        description_ru: Показать сохранённые профили/pairs.
+        service: system_core.services.disk_auditor_service:list_pairs
+        kind: safe
+        parameters: {}
+maintenance_operations:
+  - id: cleanup_input_output
+    title: Clear I/O
+    title_ru: Очистить I/O
+    description: Delete contents of managed input and output folders only.
+    description_ru: Удалить содержимое только управляемых папок input и output.
+    service: system_core.services.disk_auditor_service:cleanup_input_output
+    kind: dangerous
+    parameters: {}
+  - id: clear_path_history
+    title: Clear paths
+    title_ru: Очистить пути
+    description: Delete saved source/target path history.
+    description_ru: Удалить сохранённую историю путей source/target.
+    service: system_core.services.disk_auditor_service:clear_path_history
+    kind: dangerous
+    parameters: {}
+  - id: cleanup_workspace
+    title: Cleanup workspace
+    title_ru: Очистить workspace
+    description: Delete contents of the managed workspace folder only.
+    description_ru: Удалить содержимое только управляемой папки workspace.
+    service: system_core.services.disk_auditor_service:cleanup_workspace
+    kind: dangerous
+    parameters: {}

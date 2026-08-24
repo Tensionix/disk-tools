@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "remotes": [
+    {
+      "name": "city_home_sftp",
+      "protocol": "sftp",
+      "site_slug": "city_home",
+      "rclone_remote": "city_home_sftp:",
+      "auth": "ssh-agent",
+      "secret_ref": "",
+      "notes": "Example only. Store real host, user, keys and passwords in local config or external secret storage."
+    },
+    {
+      "name": "country_house_sftp",
+      "protocol": "sftp",
+      "site_slug": "country_house",
+      "rclone_remote": "country_house_sftp:",
+      "auth": "ssh-agent",
+      "secret_ref": "",
+      "notes": "Example only."
+    },
+    {
+      "name": "work_personal_edge_sftp",
+      "protocol": "sftp",
+      "site_slug": "work_personal_edge",
+      "rclone_remote": "work_personal_edge_sftp:",
+      "auth": "ssh-agent",
+      "secret_ref": "",
+      "notes": "Example only. Do not bridge or advertise third-party LANs."
+    },
+    {
+      "name": "personal_vps_sftp",
+      "protocol": "sftp",
+      "site_slug": "personal_vps",
+      "rclone_remote": "personal_vps_sftp:",
+      "auth": "ssh-agent",
+      "secret_ref": "",
+      "notes": "Neutral external node example. Do not publish real provider or geography."
+    },
+    {
+      "name": "cloud_remote_native",
+      "protocol": "cloud_native",
+      "site_slug": "cloud_remote",
+      "rclone_remote": "cloud_remote:",
+      "auth": "rclone-config",
+      "secret_ref": "",
+      "notes": "Bind this placeholder to an existing rclone remote in local config."
+    }
+  ]
+}

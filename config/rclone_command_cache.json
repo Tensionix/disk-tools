@@ -1,0 +1,32 @@
+{
+  "history": [
+    {
+      "fields": {
+        "mode": "version",
+        "remote_name": "yandex",
+        "remote_path": "",
+        "flag_profile": "safe_yandex_upload",
+        "bwlimit": "",
+        "log_level": "INFO",
+        "source_kind": "workbench_source",
+        "source_remote_name": "yandex",
+        "source_remote_path": "",
+        "target_kind": "saved_remote",
+        "target_remote_name": "yandex",
+        "target_remote_path": "Audion",
+        "auth_backend": "yandex",
+        "auth_remote_name": "server",
+        "sftp_user": "audion",
+        "sftp_host": "",
+        "sftp_port": "22",
+        "sftp_remote_path": "/home/audion/backups",
+        "sftp_auth_method": "agent",
+        "sftp_key_file": "",
+        "sftp_known_hosts_file": ""
+      },
+      "pinned": false,
+      "count": 1,
+      "last_used": "2026-06-15T17:00:31"
+    }
+  ]
+}

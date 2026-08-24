@@ -1,0 +1,23 @@
+{
+  "schema": "audion.disk_tools.rclone_profiles.v1",
+  "notes": [
+    "Do not store OAuth tokens, app passwords, client secrets, or rclone.conf contents here.",
+    "Store only safe UI defaults: profile names, remote names, remote paths, and flag preset ids."
+  ],
+  "profiles": [
+    {
+      "name": "yandex_safe_upload",
+      "remote": "yandex",
+      "remote_path": "Audion",
+      "mode": "upload_copy_safe",
+      "flag_profile": "safe_yandex_upload"
+    },
+    {
+      "name": "yandex_check_one_way",
+      "remote": "yandex",
+      "remote_path": "Audion",
+      "mode": "check_one_way",
+      "flag_profile": "safe_yandex_upload"
+    }
+  ]
+}

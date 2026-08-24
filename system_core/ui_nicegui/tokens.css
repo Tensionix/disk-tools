@@ -1,0 +1,32 @@
+:root {
+            --audion-background: var(--color-background-tertiary);
+            --audion-header-background: var(--color-background-primary);
+            --audion-header-text: var(--color-text-primary);
+            --audion-panel-background: var(--color-background-secondary);
+            --audion-terminal-background: var(--color-background-tertiary);
+            --audion-text: var(--color-text-primary);
+            --audion-secondary-text: var(--color-text-secondary);
+            --audion-muted-text: var(--color-text-tertiary);
+            --audion-button-text: var(--color-accent-primary);
+            --audion-secondary-accent: var(--color-accent-secondary);
+            --audion-tertiary-accent: var(--color-accent-tertiary);
+            --audion-button-hover-background: var(--color-background-primary);
+            --audion-panel-border: color-mix(in srgb, var(--color-border-tertiary) 62%, transparent 38%);
+            --audion-divider: color-mix(in srgb, var(--color-border-tertiary) 48%, transparent 52%);
+            --audion-input-border: color-mix(in srgb, var(--color-border-secondary) 54%, transparent 46%);
+            --audion-input-border-hover: color-mix(in srgb, var(--color-border-secondary) 72%, transparent 28%);
+            --audion-input-border-focus: color-mix(in srgb, var(--color-accent-primary) 78%, var(--color-border-secondary) 22%);
+            --audion-button-hover-border: var(--audion-input-border-hover);
+            --audion-border: var(--audion-panel-border);
+            --audion-strong-border: var(--audion-input-border-hover);
+            --audion-block-background: var(--color-background-primary);
+            --audion-success: var(--q-positive, var(--color-border-success, #21BA45));
+            --audion-success-text: var(--color-text-success, #C0DD97);
+            --audion-success-background: var(--color-background-success, #173404);
+            --audion-success-border: var(--color-border-success, #639922);
+            --audion-warning-text: var(--color-text-warning, #FAC775);
+            --audion-warning-background: var(--color-background-warning, #412402);
+            --audion-warning-border: var(--color-border-warning, #BA7517);
+            --audion-extension-surface: color-mix(in srgb, var(--audion-terminal-background) 68%, var(--audion-block-background) 32%);
+            --audion-extension-surface-hover: color-mix(in srgb, var(--audion-button-hover-background) 74%, var(--audion-block-background) 26%);
+}

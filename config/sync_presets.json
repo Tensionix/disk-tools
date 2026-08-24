@@ -1,0 +1,123 @@
+{
+  "presets": {
+    "DEV": {
+      "include_globs": [
+        "*.py", "*.pyw", "*.ipynb",
+        "*.ps1", "*.psm1", "*.psd1",
+        "*.sh", "*.bash", "*.zsh",
+        "*.bat", "*.cmd",
+        "*.yml", "*.yaml", "*.json", "*.toml",
+        "*.ini", "*.cfg", "*.conf",
+        "Dockerfile", "dockerfile",
+        "compose.yml", "compose.yaml",
+        "docker-compose.yml", "docker-compose.yaml",
+        ".env", ".gitignore", ".gitattributes", ".editorconfig",
+        "*.tf", "*.tfvars", "*.hcl", "*.nix",
+        "*.sql",
+        "*.go", "*.rs", "*.c", "*.cpp", "*.h", "*.hpp",
+        "*.java", "*.kt", "*.cs", "*.swift",
+        "*.js", "*.ts", "*.tsx", "*.jsx",
+        "*.css", "*.scss", "*.html"
+      ]
+    },
+    "ARCH": {
+      "include_globs": [
+        "*.7z", "*.zip", "*.rar", "*.tar", "*.gz", "*.bz2",
+        "*.cab", "*.iso", "*.img", "*.nrg", "*.rpm",
+        "*.jar", "*.arj", "*.ace", "*.lzh", "*.lha",
+        "*.cpio", "*.z", "*.zz", "*.zoo", "*.uc2",
+        "*.a0?", "*.a1?", "*.r0?", "*.r1?", "*.r2?",
+        "*.r3?", "*.r4?", "*.r5?", "*.r6?", "*.r7?",
+        "*.r8?", "*.r9?", "*.tib"
+      ]
+    },
+    "AUDIO": {
+      "include_globs": [
+        "*.wav", "*.flac", "*.ape", "*.wv", "*.tak",
+        "*.aac", "*.aax", "*.aiff", "*.aif", "*.aifc",
+        "*.alac", "*.m4a", "*.m4b", "*.m4p", "*.m4r",
+        "*.mp3", "*.mp2", "*.mp1", "*.mpga",
+        "*.ogg", "*.oga", "*.opus", "*.mogg",
+        "*.tta", "*.caf", "*.ac3", "*.eac3", "*.dts",
+        "*.amr", "*.vox", "*.wma", "*.mka",
+        "*.mid", "*.midi", "*.mod", "*.xm", "*.s3m",
+        "*.sid", "*.spc", "*.snd", "*.voc",
+        "*.ra", "*.ram", "*.rm", "*.rmi", "*.rmx", "*.rv",
+        "*.mpa", "*.mpc", "*.cda", "*.movpkg"
+      ]
+    },
+    "VIDEO": {
+      "include_globs": [
+        "*.mkv", "*.mp4", "*.mov", "*.mxf",
+        "*.avi", "*.wmv", "*.webm", "*.ogv", "*.ogm",
+        "*.mpeg", "*.mpg", "*.mpe", "*.m4v",
+        "*.ts", "*.mts", "*.m2ts", "*.m2t", "*.m2v", "*.m2p", "*.m2s",
+        "*.vob", "*.ifo",
+        "*.flv", "*.f4v", "*.divx", "*.asf", "*.amv",
+        "*.dv", "*.3gp", "*.3g2", "*.3gp2", "*.3gpp", "*.3gpp2", "*.3mm",
+        "*.m1v",
+        "*.av1", "*.vp9",
+        "*.heif", "*.avif",
+        "*.srt"
+      ]
+    },
+    "GRAPHICS": {
+      "include_globs": [
+        "*.bmp", "*.dib", "*.rle", "*.gif", "*.png",
+        "*.jpg", "*.jpeg", "*.jxl", "*.webp",
+        "*.tif", "*.tiff", "*.psd", "*.svg", "*.svgz",
+        "*.heic", "*.heif", "*.avif",
+        "*.hdr", "*.exr", "*.dpx",
+        "*.eps", "*.emf", "*.wmf", "*.xbm", "*.xpm",
+        "*.ico", "*.cur", "*.ani", "*.icn", "*.icl",
+        "*.pbm", "*.pgm", "*.pcx", "*.pcd", "*.pic", "*.pix",
+        "*.tga", "*.xif",
+        "*.ttf", "*.otf", "*.pfm", "*.pfb", "*.afm",
+        "*.abr", "*.grd", "*.atn",
+        "*.dwg", "*.wor",
+        "*.3fr", "*.ari", "*.arw", "*.bay", "*.braw",
+        "*.crw", "*.cr2", "*.cr3", "*.cap", "*.data",
+        "*.dcs", "*.dcr", "*.dng", "*.drf", "*.eip",
+        "*.erf", "*.fff", "*.gpr", "*.iiq", "*.k25",
+        "*.kdc", "*.mdc", "*.mef", "*.mos", "*.mrw",
+        "*.nef", "*.nrw", "*.obm", "*.orf", "*.pef",
+        "*.ptx", "*.pxn", "*.r3d", "*.raf", "*.raw",
+        "*.rwl", "*.rw2", "*.rwz", "*.sr2", "*.srf",
+        "*.srw", "*.x3f"
+      ]
+    },
+    "DOCS": {
+      "include_globs": [
+        "*.doc", "*.docx", "*.xls", "*.xlsx", "*.ppt", "*.pptx",
+        "*.pdf", "*.rtf", "*.txt", "*.md", "*.markdown",
+        "*.csv", "*.dif", "*.xml",
+        "*.htm", "*.html", "*.mht",
+        "*.xps", "*.chm",
+        "*.djv", "*.djvu",
+        "*.one", "*.onetoc2", "*.oft",
+        "*.accdb", "*.pub", "*.vsd",
+        "*.cue", "*.m3u", "*.m3u8", "*.fpl", "*.tab",
+        "*.plt", "*.prn",
+        "*.ini", "*.cfg"
+      ]
+    },
+    "TEMP": {
+      "exclude_globs": [
+        "~*.*", "*.~~~", "$*.*", "*.$??",
+        "*.log", "*.tmp", "*.bak", "*.old", "*.org",
+        "*.pk", "*.wbk", "*.swp", "*.backup",
+        "backup_of_*.*", "*.thumbnails", "*Render Cache*"
+      ]
+    },
+    "APPS": {
+      "include_globs": [
+        "*.app", "*.exe", "*.msi", "*.msp", "*.com",
+        "*.jar", "*.scr", "*.cpl", "*.pif",
+        "*.lnk", "*.url",
+        "*.vbs", "*.vbe",
+        "*.widget", "*.wgt",
+        "*.bin", "*.dex"
+      ]
+    }
+  }
+}

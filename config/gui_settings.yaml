@@ -1,0 +1,10 @@
+gui:
+  # Change to "en" for public GitHub builds.
+  # Theme ids are defined in config/ui_colors.yaml.
+  language: "ru"
+  theme: "code_dark"
+  emoji: false
+  allow_runtime_switching: true
+  advanced_open: false
+  workspace_source: ""
+  workspace_target: ""
