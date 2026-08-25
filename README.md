@@ -8,7 +8,7 @@
 - [Direct download](https://audion.dev/get/disk-tools/4.0.0/Audion_Disk_Tools_v4.0.0_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
 
-![The program window](docs/screenshot.png)
+<img src="docs/screenshot.png" alt="The program window" width="560">
 
 `SHA-256: d1d8decaddee9399d47c9d5ee779a31d0f4e3690c041a8907a2d9f8e0c72f42b`
 
