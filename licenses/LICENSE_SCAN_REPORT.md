@@ -1,13 +1,13 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Disk Tools** (`audion-disk-tools`)
-- Run: `20260824T173953Z_audion-disk-tools_cd20b57e`
+- Run: `20260901T043230Z_audion-disk-tools_99803c29`
 - Project root: `S:\Release\Audion Disk Tools`
 - Scan root: `S:\Release\Audion Disk Tools`
 - Output: `S:\Release\Audion Disk Tools\licenses`
 - Status: **PASS**
-- Components: 74
-- Bundled: 74
+- Components: 72
+- Bundled: 72
 - Optional runtime: 0
 
 ## Issues
@@ -27,12 +27,12 @@ No issues detected.
 | anyio | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 4.14.2 | 4.14.2 |
 | attrs | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 26.1.0 | 26.1.0 |
 | beautifulsoup4 | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 4.15.0 | 4.15.0 |
-| bidict | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.23.1 | 0.23.1 |
+| bidict | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.24.1 | 0.24.1 |
 | blake3 | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 1.0.9 | 1.0.9 |
 | bottle | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.13.4 | 0.13.4 |
 | certifi | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2026.7.22 | 2026.7.22 |
 | cffi | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2.1.1 | 2.1.1 |
-| click | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 8.4.2 | 8.4.2 |
+| click | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 8.5.0 | 8.5.0 |
 | clr_loader | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.3.1 | 0.3.1 |
 | colorama | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.4.6 | 0.4.6 |
 | docutils | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.23 | 0.23 |
@@ -57,19 +57,17 @@ No issues detected.
 | orjson | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 3.12.0 | 3.12.0 |
 | packaging | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 26.3 | 26.3 |
 | PeaZip | `UNCHANGED` | 11.2.0 | 11.2.0 |
-| pip | `NEW_COMPONENT_APPROVED_PROFILE` | - | 26.2.1 |
 | pluggy | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 1.6.0 | 1.6.0 |
 | PowerShell | `UNCHANGED` | portable | portable |
 | propcache | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.5.2 | 0.5.2 |
-| proxy_tools | `NEW_COMPONENT_APPROVED_PROFILE` | - | 0.1.0 |
 | pycparser | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 3.0 | 3.0 |
-| pydantic | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2.13.4 | 2.13.4 |
-| pydantic_core | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2.46.4 | 2.46.4 |
+| pydantic | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2.13.5 | 2.13.5 |
+| pydantic_core | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2.46.5 | 2.46.5 |
 | Pygments | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2.21.0 | 2.21.0 |
 | pytest | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 9.1.1 | 9.1.1 |
 | python-dotenv | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 1.2.3 | 1.2.3 |
 | Python Embedded | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 3.12.x | 3.12.x |
-| python-engineio | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 4.13.5 | 4.13.5 |
+| python-engineio | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 4.14.0 | 4.14.0 |
 | python-multipart | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.0.32 | 0.0.32 |
 | python-socketio | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 5.16.4 | 5.16.4 |
 | pythonnet | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 3.1.0 | 3.1.0 |
@@ -88,7 +86,7 @@ No issues detected.
 | uvicorn | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.52.4 | 0.52.4 |
 | watchfiles | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 1.2.0 | 1.2.0 |
 | webencodings | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.6.1 | 0.6.1 |
-| websockets | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 17.0.1 | 17.0.1 |
+| websockets | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 17.1 | 17.1 |
 | wheel | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.48.0 | 0.48.0 |
 | wsproto | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 1.3.2 | 1.3.2 |
 | yarl | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 1.24.5 | 1.24.5 |
