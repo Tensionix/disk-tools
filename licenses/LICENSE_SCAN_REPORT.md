@@ -1,13 +1,13 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Disk Tools** (`audion-disk-tools`)
-- Run: `20260901T043230Z_audion-disk-tools_99803c29`
+- Run: `20260904T022609Z_audion-disk-tools_48fdec6b`
 - Project root: `S:\Release\Audion Disk Tools`
 - Scan root: `S:\Release\Audion Disk Tools`
 - Output: `S:\Release\Audion Disk Tools\licenses`
 - Status: **PASS**
-- Components: 72
-- Bundled: 72
+- Components: 74
+- Bundled: 74
 - Optional runtime: 0
 
 ## Issues
@@ -24,7 +24,7 @@ No issues detected.
 | aiosignal | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 1.4.0 | 1.4.0 |
 | annotated-doc | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.0.5 | 0.0.5 |
 | annotated-types | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.8.0 | 0.8.0 |
-| anyio | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 4.14.2 | 4.14.2 |
+| anyio | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 4.15.0 | 4.15.0 |
 | attrs | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 26.1.0 | 26.1.0 |
 | beautifulsoup4 | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 4.15.0 | 4.15.0 |
 | bidict | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.24.1 | 0.24.1 |
@@ -57,9 +57,11 @@ No issues detected.
 | orjson | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 3.12.0 | 3.12.0 |
 | packaging | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 26.3 | 26.3 |
 | PeaZip | `UNCHANGED` | 11.2.0 | 11.2.0 |
+| pip | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 26.2.1 | 26.2.1 |
 | pluggy | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 1.6.0 | 1.6.0 |
 | PowerShell | `UNCHANGED` | portable | portable |
 | propcache | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.5.2 | 0.5.2 |
+| proxy_tools | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 0.1.0 | 0.1.0 |
 | pycparser | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 3.0 | 3.0 |
 | pydantic | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2.13.5 | 2.13.5 |
 | pydantic_core | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 2.46.5 | 2.46.5 |

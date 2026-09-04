@@ -10,7 +10,7 @@
 
 **Version 4.0.1** · 2026-09-04 · 232.6 MB
 
-- [Direct download](https://dl.audion.dev/disk-tools/4.0.1/Audion_Disk_Tools_v4.0.1_Full.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/disk-tools/4.0.1/Audion_Disk_Tools_v4.0.1_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
 
 <p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
@@ -23,7 +23,20 @@ An **Audion** tool, published by [Tensionix](https://github.com/Tensionix).
 <!-- /audion:release -->
 
 
-[Русский](README_RU.md) · [User Guide](USER_GUIDE_EN.md) · [Command Reference](COMMAND_REFERENCE_RU.md)
+[Русский](Docs/README_RU.md) · [User Guide](Docs/USER_GUIDE_EN.md) · [Command Reference](Docs/COMMAND_REFERENCE_RU.md)
+
+**Contents**
+
+- [Why It Exists](#why-it-exists)
+- [Principles](#principles)
+- [What It Can Do](#what-it-can-do)
+- [Next](#next)
+- [Technical Reference](#technical-reference)
+  - [Running](#running)
+  - [Modes and Where to Start](#modes-and-where-to-start)
+  - [Where Things Live](#where-things-live)
+  - [Limits of the File Engine](#limits-of-the-file-engine)
+  - [Workbench Naming](#workbench-naming)
 
 A portable toolkit for disks and files on Windows: compare, update, mirror, filter
 by type, archive, transfer across the network or to cloud storage.
@@ -115,8 +128,8 @@ own masks.
 
 ## Next
 
-* [User Guide](USER_GUIDE_EN.md) — step by step, modes, profiles.
-* [Command Reference](COMMAND_REFERENCE_RU.md) — every command and parameter.
+* [User Guide](Docs/USER_GUIDE_EN.md) — step by step, modes, profiles.
+* [Command Reference](Docs/COMMAND_REFERENCE_RU.md) — every command and parameter.
 * `tools\SYNC_PROFILES_RU.md` — profiles, presets, filters.
 * `tools\ARCHIVE_OPERATIONS_RU.md` — archives, self-extraction, encryption.
 * `tools\TRANSFER_RU.md` — data transfer: operations, engines, packaging.

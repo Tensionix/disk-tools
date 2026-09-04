@@ -2,6 +2,19 @@
 
 [Русский](README_RU.md) · [User Guide](USER_GUIDE_EN.md) · [Command Reference](COMMAND_REFERENCE_RU.md)
 
+**Contents**
+
+- [Why It Exists](#why-it-exists)
+- [Principles](#principles)
+- [What It Can Do](#what-it-can-do)
+- [Next](#next)
+- [Technical Reference](#technical-reference)
+  - [Running](#running)
+  - [Modes and Where to Start](#modes-and-where-to-start)
+  - [Where Things Live](#where-things-live)
+  - [Limits of the File Engine](#limits-of-the-file-engine)
+  - [Workbench Naming](#workbench-naming)
+
 A portable toolkit for disks and files on Windows: compare, update, mirror, filter
 by type, archive, transfer across the network or to cloud storage.
 

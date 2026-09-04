@@ -2,6 +2,19 @@
 
 [Русский](USER_GUIDE_RU.md) · [About](README_EN.md) · [Command Reference](COMMAND_REFERENCE_RU.md)
 
+**Contents**
+
+- [Running](#running)
+- [The Working Route](#the-working-route)
+- [The Safety Ladder](#the-safety-ladder)
+- [Modes](#modes)
+- [Safety Parameters](#safety-parameters)
+- [Filters](#filters)
+- [Cloud Storage](#cloud-storage)
+- [Reports and Terminal](#reports-and-terminal)
+- [Checks After Changes](#checks-after-changes)
+- [Technical Reference](#technical-reference)
+
 How to work with it: the route, the safety ladder, the modes, filters, cloud
 storage, reports.
 

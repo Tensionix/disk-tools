@@ -1,5 +1,17 @@
 # Smoke test checklist
 
+**Содержание**
+
+- [Быстрый обязательный набор](#быстрый-обязательный-набор)
+- [Текущий baseline полного smoke](#текущий-baseline-полного-smoke)
+- [PDF-документация](#pdf-документация)
+- [RClone](#rclone)
+- [GUI](#gui)
+- [Sync](#sync)
+- [Profiles](#profiles)
+- [Archive](#archive)
+- [Docs](#docs)
+
 Чеклист нужен после крупных изменений GUI, CLI, installer scripts, RClone/network/archive слоя или документации с изменением команд.
 
 ## Быстрый обязательный набор
