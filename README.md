@@ -23,7 +23,7 @@ An **Audion** tool, published by [Tensionix](https://github.com/Tensionix).
 <!-- /audion:release -->
 
 
-[Русский](docs/README_RU.md) · [User Guide](docs/USER_GUIDE_EN.md) · [Command Reference](docs/COMMAND_REFERENCE_RU.md)
+[Русский](Docs/README_RU.md) · [User Guide](Docs/USER_GUIDE_EN.md) · [Command Reference](Docs/COMMAND_REFERENCE_RU.md)
 
 **Contents**
 
@@ -128,8 +128,8 @@ own masks.
 
 ## Next
 
-* [User Guide](docs/USER_GUIDE_EN.md) — step by step, modes, profiles.
-* [Command Reference](docs/COMMAND_REFERENCE_RU.md) — every command and parameter.
+* [User Guide](Docs/USER_GUIDE_EN.md) — step by step, modes, profiles.
+* [Command Reference](Docs/COMMAND_REFERENCE_RU.md) — every command and parameter.
 * `tools\SYNC_PROFILES_RU.md` — profiles, presets, filters.
 * `tools\ARCHIVE_OPERATIONS_RU.md` — archives, self-extraction, encryption.
 * `tools\TRANSFER_RU.md` — data transfer: operations, engines, packaging.
