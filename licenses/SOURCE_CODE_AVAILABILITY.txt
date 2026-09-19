@@ -40,17 +40,17 @@ url: https://peazip.github.io/
 winget_id: Giorgiotani.Peazip
 
 Component: rclone
-Version/profile: 1.75.0
+Version/profile: 1.75.1
 Method: upstream_pin
-version: 1.75.0
+version: 1.75.1
 url: https://github.com/rclone/rclone/releases
 winget_id: Rclone.Rclone
 
 Component: tqdm
-Version/profile: 4.70.0
+Version/profile: 4.70.1
 Method: upstream_pin
-version: 4.70.0
-url: https://pypi.org/project/tqdm/4.70.0/
+version: 4.70.1
+url: https://pypi.org/project/tqdm/4.70.1/
 
 
 OPTIONAL RUNTIME COMPONENTS
