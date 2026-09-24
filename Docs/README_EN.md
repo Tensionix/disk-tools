@@ -1,28 +1,5 @@
 # Audion Disk Tools
 
-<!-- audion:release -->
-<p align="center">
-  <a href="https://audion.dev/downloads/disk-tools"><img alt="Windows" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0b6db8?style=flat-square&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/Tensionix/disk-tools/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/Tensionix/disk-tools?style=flat-square&label=release&color=e08a63"></a>
-  <a href="https://github.com/Tensionix/disk-tools/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Tensionix/disk-tools/total?style=flat-square&label=downloads&color=5fd08a"></a>
-  <a href="https://github.com/Tensionix/disk-tools/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Tensionix/disk-tools?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600"></a>
-</p>
-
-**Version 5.6.2** · 2026-09-25 · 98.2 MB
-
-- [Direct download](https://audion.dev/get/disk-tools/5.6.2/Audion_Disk_Tools_v5.6.2_Full.zip) — unmetered, no rate limits
-- [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
-
-<p align="center"><img src="Docs/screenshot.png" alt="The program window" width="560"></p>
-
-`SHA-256: 1f262ee957b63eba04bbaffdede809e8fc4c4b2c61368dd6e6d36816b8fd3145`
-
----
-
-An **Audion** tool, published by [Tensionix](https://github.com/Tensionix).
-<!-- /audion:release -->
-
-
 A two-panel file manager for Windows: tabs and drives as in Total Commander, mask filters, saved panels, robocopy copying with BLAKE3 verification, sync, packing and unpacking — in one window, with nothing to install.
 
 Version 5.6.2. Built on .NET 10 and Avalonia; everything it needs lives in the project folder: the program with its own runtime, 7-Zip and zstd (from PeaZip portable), rclone, the editors Microsoft Edit and micro and a portable Windows Terminal (all MIT).

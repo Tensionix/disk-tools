@@ -8,34 +8,28 @@ record and does not replace review of the applicable license terms.
 
 BUNDLED COMPONENTS WITH SOURCE REFERENCES
 --------------------------------------------------------------------------------
-Component: bidict
-Version/profile: 0.24.1
+Component: Cascadia Code
+Version/profile: bundled
 Method: upstream_pin
-version: 0.24.1
-url: https://pypi.org/project/bidict/0.24.1/
+version: bundled
+url: https://github.com/microsoft/cascadia-code
 
-Component: certifi
-Version/profile: 2026.7.22
+Component: micro editor
+Version/profile: bundled
 Method: upstream_pin
-version: 2026.7.22
-url: https://pypi.org/project/certifi/2026.7.22/
+version: bundled
+url: https://github.com/zyedidia/micro
 
-Component: docutils
-Version/profile: 0.23
+Component: Microsoft Edit
+Version/profile: bundled
 Method: upstream_pin
-version: 0.23
-url: https://pypi.org/project/docutils/0.23/
-
-Component: orjson
-Version/profile: 3.12.0
-Method: upstream_pin
-version: 3.12.0
-url: https://pypi.org/project/orjson/3.12.0/
+version: bundled
+url: https://github.com/microsoft/edit
 
 Component: PeaZip
-Version/profile: 11.2.0
+Version/profile: present-in-release
 Method: upstream_pin
-version: 11.2.0
+version: present-in-release
 url: https://peazip.github.io/
 winget_id: Giorgiotani.Peazip
 
@@ -46,11 +40,11 @@ version: 1.75.1
 url: https://github.com/rclone/rclone/releases
 winget_id: Rclone.Rclone
 
-Component: tqdm
-Version/profile: 4.70.1
+Component: Windows Terminal
+Version/profile: bundled
 Method: upstream_pin
-version: 4.70.1
-url: https://pypi.org/project/tqdm/4.70.1/
+version: bundled
+url: https://github.com/microsoft/terminal
 
 
 OPTIONAL RUNTIME COMPONENTS
