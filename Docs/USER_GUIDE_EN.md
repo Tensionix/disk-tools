@@ -96,7 +96,7 @@ The marked items are packed into the other panel (a panel on the drive list mean
 
 - **Formats**: ZIP, 7Z, SFX, TAR, TAR.GZ, TAR.ZSTD — several at once. TAR.LZ4 is off while there is no `lz4.exe`.
 - **Compression** 0–9; **archives** — each separately or all in one; **layout** — into one folder or each into its own.
-- **Encryption** AES-256 — 7Z and SFX only; "with names" locks the file list too. ZIP is not encrypted: 7-Zip would use the old ZipCrypto.
+- **Encryption** AES-256 — 7Z and SFX only; "with names" locks the file list too. ZIP is not encrypted: only the old ZipCrypto would be left for it.
 - **Name**: prefix and suffix; `N` as a separate word becomes the object number.
 - **SFX**: where it offers to unpack (a variable and a path with `{name}`), a wrapper without compression.
 - **After**: test the archive (`7z t`, zstd's own test for zstd); delete sources — to the Recycle Bin and only once all their archives are made and tested.
@@ -109,13 +109,13 @@ Archives are taken from the marked items (the first volume of a split set).
 - **How**: *smart* — an archive with one folder or one file inside lands as it is, loose files get a folder named after the archive (and so does an archive whose name is taken); *each into its own folder*; *all in one place*.
 - **Conflicts**: rename, replace, skip. **Password** — for locked archives. **Delete archives** — to the Recycle Bin after a good unpack, with all volumes.
 
-TAR inside GZ, ZSTD, XZ, BZ2 opens straight through. Integrity is checked while unpacking: 7-Zip compares every file's checksum.
+TAR inside GZ, ZSTD, XZ, BZ2 opens straight through. Integrity is checked while unpacking: PeaZip compares every file's checksum.
 
 ## SETTINGS
 
 - **Sizes** — short or in bytes.
 - **Engine** — robocopy or rclone.
-- **Archiver** — where 7-Zip, zstd and lz4 are.
+- **Archiver** — where the PeaZip engines are: `7z`, `zstd`, `lz4`.
 - **Tools** — the program, PeaZip and rclone with versions and dots; UPDATE downloads the latest version of a tool into `Tools\`, for the program it opens the release page. CHECK NOW asks GitHub without waiting six hours.
 - **Program font and panel font** — family and the size of the middle Aa; the smaller and larger steps follow from it.
 

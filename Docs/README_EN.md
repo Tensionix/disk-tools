@@ -2,11 +2,11 @@
 
 A two-panel file manager for Windows: tabs and drives as in Total Commander, mask filters, saved panels, robocopy copying with BLAKE3 verification, sync, packing and unpacking — in one window, with nothing to install.
 
-Version 5.6.2. Built on .NET 10 and Avalonia; everything it needs lives in the project folder: the program with its own runtime, 7-Zip and zstd (from PeaZip portable), rclone, the editors Microsoft Edit and micro and a portable Windows Terminal (all MIT).
+Version 5.6.3. Built on .NET 10 and Avalonia; everything it needs lives in the project folder: the program with its own runtime, the PeaZip archiver, rclone, the editors Microsoft Edit and micro and a portable Windows Terminal (all MIT).
 
 ## Start
 
-`Start.exe` in the root of the folder. Nothing to install: .NET, 7-Zip and rclone travel with the program. The folder can be moved anywhere — the settings and the history of work live inside it, in `config\`.
+`Start.exe` in the root of the folder. Nothing to install: .NET, PeaZip and rclone travel with the program. The folder can be moved anywhere — the settings and the history of work live inside it, in `config\`.
 
 ## What it does
 
@@ -29,7 +29,7 @@ Version 5.6.2. Built on .NET 10 and Avalonia; everything it needs lives in the p
 | --- | --- |
 | `Start.exe` | starts the program |
 | `App\` | the built program with its .NET runtime and data: translations, TC colours, mask groups |
-| `Tools\` | PeaZip (only 7-Zip and zstd with their licences) and rclone |
+| `Tools\` | PeaZip (only its archiving engines `7z` and `zstd` with their licences) and rclone |
 | `config\settings.json` | the look and the choices: language, theme, fonts, colours, engine; survive the cleanup |
 | `config\history\` | the history of work: tabs, saved panels, own masks, BISYNC pairs; removed by the cleanup |
 | `._runtime\` | throwaway: operations log, GitHub's answer about versions, build stages |
@@ -45,7 +45,7 @@ The program in `App\` is already built and ships as it is. It needs rebuilding o
 
 - `[01] BUILD APP` — the checks of `[03]` first, then a rebuild of the program into `App\` (needs the .NET 10 SDK); when a check fails, `App\` is left as it was;
 - `[02] START LAUNCHER` — rebuild `Start.exe` with the program icon;
-- `[03] CHECKS` — scenarios in which the program once lost or damaged data (audits of 24.09.2026): verified BLAKE3 moves, STOP, masks on both engines, overlapping paths, junctions, archives, settings, the installer. They run on throwaway files in the Windows temp folder with the real robocopy, rclone and 7-Zip; the Recycle Bin is not used. The report goes to `._runtime\tests\`;
+- `[03] CHECKS` — scenarios in which the program once lost or damaged data (audits of 24.09.2026): verified BLAKE3 moves, STOP, masks on both engines, overlapping paths, junctions, archives, settings, the installer. They run on throwaway files in the Windows temp folder with the real robocopy, rclone and PeaZip; the Recycle Bin is not used. The report goes to `._runtime\tests\`;
 - `[05] PEAZIP`, `[07] RCLONE` — force a reinstall of a tool;
 - `[06] TOOLS IF NEWER` — check PeaZip and rclone against GitHub and download only what is out of date or missing;
 - `[70] CLEAN CACHE` — remove intermediate build files;
