@@ -5,6 +5,7 @@
 - [The window](#the-window)
 - [A panel](#a-panel)
 - [Keys](#keys)
+- [DIFF — Shift+F2](#diff--shiftf2)
 - [Masks and the filter](#masks-and-the-filter)
 - [Saved panels](#saved-panels)
 - [Copying and sync](#copying-and-sync)
@@ -55,7 +56,7 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 | Ctrl+U | swap the panels (the ⇄ button of a panel) |
 | Alt+F1 / Alt+F2 | the drive list of the left / right panel (the chevron in the drive row); the drive letter goes straight there |
 | Ctrl+H | hidden and system files: show or hide, for both panels (the eye at the top) |
-| Shift+F2 | compare the panels (the DIFF button below): both get marked with what the other side lacks and what is newer or of another size; common folders by their content. With something marked (in either panel) only the marked names are compared, and the marks stay on those that differ. Nothing is copied |
+| Shift+F2 | DIFF (the button below): a window of its own with the differences between the two panels' folders, down to the files; with marks in the panels - only the marked. An open window comes forward and compares again |
 | Ctrl+F | find in the panel: only the names with this text stay in the list; Esc — off, Enter or ↓ — to the list |
 | Ctrl+C / Ctrl+X / Ctrl+V | copy / cut the marked rows to the Windows clipboard, paste from it into the active panel's folder — to and from Explorer too; pasting runs in the queue, like F5 and F6 |
 | Shift+F4 | a new file in the active panel: a name and an extension (chips; a name with a dot keeps its own), straight into the editor ("OPEN IN EDITOR"); the page-with-plus icon above each panel does the same for that panel |
@@ -74,6 +75,17 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 | Esc | during an operation — STOP; otherwise remove the filter or close the section |
 
 Rows can also be marked with a frame: press on an empty spot and drag.
+
+## DIFF — Shift+F2
+
+A window of its own beside the main one: the panels stay in view and at work - delete, look, delete, look. The window watches both folders: after an operation of the program or a change from outside it compares again in the background, keeping the filter, the order, the chosen lines and what BLAKE3 has already read. Its place and size are kept; Esc stops a comparison, and with nothing running closes the window. It compares the two panels' folders file by file, through every common subfolder. A difference deep inside shows by its own path (`proj\src\config.json`), not as a marked folder to search in. A folder missing on the other side is one line with its file count and size.
+
+- **The table:** object · left (date, size) · right · difference. The arrow of a side shows the object in that panel; a double click on the line does the same. The headers sort: the object by its path, the sides by date, the difference by its kind. The colour of the difference: blue - leans left, turquoise - leans right, amber - other bytes (BLAKE3 ✗), orange - an error, green - BLAKE3 ✓.
+- **Filters:** ALL DIFFERENCES (opens first) · ONLY LEFT · ONLY RIGHT · CHANGED · ERRORS · MATCHED. The status line ends with "the other N matched"; MATCHED lists them, for whoever looks for proof that a copy is whole. A matched pair matches in everything: a pair with other content by BLAKE3 is a difference, not a match.
+- **CHECK BLAKE3** — BLAKE3 for the chosen lines, and with nothing chosen for every pair of files, the ones equal by date and size too: the same date and size prove nothing. In the difference column: BLAKE3 ✓ - the same bytes, ✗ - other bytes (such a pair joins the changed), ? - not read; the summary says how many matched with BLAKE3 ✓.
+- **ERRORS** — what could not be compared: a folder that cannot be read, a link to another folder, a hash not computed. It never counts as matched.
+- **MARK IN PANELS** — the chosen differences (or all shown) become marks, each on its side: on the left what the right lacks or has older, on the right the other way; other content - on both; from MATCHED - on both sides. When differences lie in subfolders, the panel switches to the flat view (Ctrl+B) and marks the files themselves; the flat view holds no empty folders - the window lists them and asks whether to carry the rest. The panel's mask filter and search are turned off, so the marks are in view and reach F5. Then F5 or F11 as usual: DIFF copies nothing itself.
+- Marks in the panels before Shift+F2 narrow the comparison to those names.
 
 ## Masks and the filter
 
@@ -132,7 +144,7 @@ TAR inside GZ, ZSTD, XZ, BZ2 opens straight through. Integrity is checked while 
 - **Copy times** — as the source (the default, as in TC) or the time of copying, as cp without -p on Linux. Attributes are carried either way. It is for F5 and Ctrl+V; a move (F6), COPY, MIRROR and BISYNC always keep the times.
 - **Archiver** — where the PeaZip engines are: `7z`, `zstd`, `lz4`.
 - **Tools** — the program, PeaZip and rclone with versions and dots; UPDATE downloads the latest version of a tool into `Tools\`, for the program it opens the release page. CHECK NOW asks GitHub without waiting six hours.
-- **Program font and panel font** — family and the size of the middle Aa; the smaller and larger steps follow from it.
+- **Program font and panel font** — JetBrains Mono by default: it ships inside the program, like Inter, with Cyrillic. Family and the size of the middle Aa; the smaller and larger steps follow from it. **FROM THE NET…** — a family from Google Fonts or Nerd Fonts: a list with search; for Nerd Fonts the archive size shows before fetching. The files go to `config\history\fonts` and are read by the program itself, nothing is installed into Windows; fetched families join the row of both blocks. Any Windows font by name can no longer be picked: the window fell on fonts the program cannot draw.
 
 ## COLORS
 

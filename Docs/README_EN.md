@@ -1,6 +1,6 @@
 # Audion Disk Tools
 
-[Русский](README_RU.md)
+[English README](README_EN.md) · [User Guide](USER_GUIDE_EN.md) | [Русский README](README_RU.md) · [Руководство](USER_GUIDE_RU.md)
 
 A two-panel file manager for Windows: tabs and drives as in Total Commander, mask filters, saved panels, robocopy copying with BLAKE3 verification, sync, packing and unpacking — in one window, with nothing to install.
 

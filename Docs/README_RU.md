@@ -1,6 +1,6 @@
 # Audion Disk Tools
 
-[English](README_EN.md)
+[English README](README_EN.md) · [User Guide](USER_GUIDE_EN.md) | [Русский README](README_RU.md) · [Руководство](USER_GUIDE_RU.md)
 
 Двухпанельный файловый менеджер для Windows: вкладки и диски как в Total Commander, фильтр масками, сохранённые панели, копирование через robocopy с проверкой BLAKE3, синхронизация, архивация и распаковка — в одном окне, без установки.
 
