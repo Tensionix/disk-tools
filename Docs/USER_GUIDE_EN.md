@@ -16,7 +16,7 @@
 
 ## The window
 
-At the top — the sections (SETTINGS, MASKS, COLORS), in the middle — the program and its tools with their versions, on the right — the BLAKE3 and NO CACHE boxes, the view: font Aa, row density, language, theme, ABOUT.
+At the top — everything that acts on both panels and the whole program: the sections (SETTINGS, MASKS, COLORS), in the middle — the program and its tools with their versions, on the right — the BLAKE3 and NO CACHE boxes, the eye (hidden and system files, Ctrl+H), font Aa, row density, language, theme, ABOUT.
 
 Below — two panels. The active one has a sea-blue frame: it is the source, the other one the target. At the bottom — the status line with the progress bar and STOP, and the operation buttons under it.
 
@@ -25,9 +25,11 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 ## A panel
 
 - **Three rows above the list** that never trade places: drives, the panel controls, tabs. Only the tabs wrap; the window and the splitter stop before buttons could overlap.
-- **Drives** — the first row: DRIVES opens the drive list, a click on a drive returns to the last folder opened on it, as in TC.
-- **Controls** — the second row: up, reread, mark by mask, Detailed / Simple (the name column alone), ⇄ swap the panels (Ctrl+U), Unblock (takes the "downloaded from the internet" mark off the selected files), NAMES and PATHS (to the clipboard); on the right masks and saved, + PANEL, + BOTH.
-- **Tabs**: `+` or Ctrl+T — a new one with the same folder; double click, Ctrl+W or the middle button — close; right button — pin (a pinned tab stays on the left, does not close, and leaving its folder opens a new tab); drag to change the order. In SETTINGS · TABS: a tab width limit, a row that wraps or scrolls with the wheel, and the right button — pin at once or a pin / rename menu (the tab caption changes, not the folder).
+- **Drives** — the first row: DRIVES opens the drive list, a click on a drive returns to the last folder opened on it, as in TC; the chevron at the end of the row lists every drive with its label and free space (Alt+F1 — the left panel, Alt+F2 — the right), the drive letter picks it at once.
+- **Controls** — the second row: only what changes the view of this panel: up, reread, mark by mask, Detailed (a table) / Simple (the name column alone), on the right by the masks list - a new file in this panel's folder (Shift+F4 - in the active one), save this panel (a plus) / both panels (two pluses); on the right masks and saved.
+- **The column between the panels** — what is done with files, like the vertical bar of TC; it works on the active panel: ⇄ swap the panels (Ctrl+U) · copy, cut, paste through the Windows clipboard (Ctrl+C, Ctrl+X, Ctrl+V — to and from Explorer too) · names and paths to the clipboard (Ctrl+Shift+N, Ctrl+Shift+P) · find in the panel (Ctrl+F) · unblock downloaded files. What an icon does is in its tooltip. The splitter drags by the free space of the column.
+- **Tabs**: `+` or Ctrl+T — a new one with the same folder; double click, Ctrl+W or the middle button — close; right button — pin (a pinned tab stays on the left, does not close, and leaving its folder opens a new tab); Shift + right button — rename (the tab caption changes, not the folder); drag to change the order. In SETTINGS · TABS: a tab width limit, a row that wraps or scrolls with the wheel, and the right button — pin at once or a pin / rename menu.
+- **`\` over the icon column**, left of "NAME" — to the root of this tab's drive.
 - **Breadcrumbs** of the path — a click on any part goes there.
 - **Columns** NAME, TYPE, DATE, TIME, SIZE; a click on a header sorts, folders always on top.
 - **Sizes** short (KB, MB, GB) or exact in bytes — SETTINGS · SIZES. Sizes of marked folders are counted in the background.
@@ -41,12 +43,22 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 | Ctrl+Tab, Ctrl+Shift+Tab | next and previous tab |
 | Enter, double click | open a folder or a file; on ".." — up |
 | Backspace | up, the cursor lands on the folder you left |
+| Alt+← / Alt+→ | back and forward through the folders of this tab (the arrows of the control row, the mouse side buttons) |
+| Ctrl+B | flat view: every file of every subfolder in one list, with its path from this folder; with a mask filter - "every .pdf of this tree"; F5 and F6 put the files into the target with their subfolders. COPY, MIRROR, BISYNC, packing and comparing work from the usual view. Leaving the folder turns the view off |
 | Space, Insert | mark and step down; a folder gets its size counted |
 | Shift+Space | the exact size of the row in bytes — in the panel status line, until the next action |
 | Home / ← , End / → | to the start, to the end of the list |
 | Ctrl+A | mark all or clear all |
+| * (numeric keypad) | invert the marks of the files (the icon - a square filled along its diagonal); folders stay, as in TC |
+| Alt+Shift+Enter | sizes of every folder in the list |
 | Ctrl+R | reread the panel |
 | Ctrl+U | swap the panels (the ⇄ button of a panel) |
+| Alt+F1 / Alt+F2 | the drive list of the left / right panel (the chevron in the drive row); the drive letter goes straight there |
+| Ctrl+H | hidden and system files: show or hide, for both panels (the eye at the top) |
+| Shift+F2 | compare the panels (the DIFF button below): both get marked with what the other side lacks and what is newer or of another size; common folders by their content. With something marked (in either panel) only the marked names are compared, and the marks stay on those that differ. Nothing is copied |
+| Ctrl+F | find in the panel: only the names with this text stay in the list; Esc — off, Enter or ↓ — to the list |
+| Ctrl+C / Ctrl+X / Ctrl+V | copy / cut the marked rows to the Windows clipboard, paste from it into the active panel's folder — to and from Explorer too; pasting runs in the queue, like F5 and F6 |
+| Shift+F4 | a new file in the active panel: a name and an extension (chips; a name with a dot keeps its own), straight into the editor ("OPEN IN EDITOR"); the page-with-plus icon above each panel does the same for that panel |
 | Menu key, Shift+F10, right button | Explorer menu |
 | F1 | the hot key memo; the user guide and the documentation folder are in the ABOUT menu |
 | F2 | rename |
@@ -58,7 +70,7 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 | Shift+Del | delete past the Recycle Bin |
 | F11 / F12 | COPY / MIRROR |
 | Alt+F5 / Alt+F9 | pack / unpack |
-| Ctrl+Shift+N / Ctrl+Shift+P, the NAMES / PATHS buttons of the panel | names or full paths of the marked rows to the clipboard, one per line |
+| Ctrl+Shift+N / Ctrl+Shift+P, the "names" / "paths" icons in the column between the panels | names or full paths of the marked rows to the clipboard, one per line |
 | Esc | during an operation — STOP; otherwise remove the filter or close the section |
 
 Rows can also be marked with a frame: press on an empty spot and drag.
@@ -73,7 +85,9 @@ MIRROR and BISYNC do not run under a filter: a mirror is a full copy, masks are 
 
 ## Saved panels
 
-**+ PANEL** remembers the folder and the marks of this panel, **+ BOTH** — of both. Choosing it in the list brings everything back. The star pins a line at the top of the list.
+The **"save the panel"** icon (a thick plus) remembers the panel with all its tabs: folders, marks, filters, pins. **"Save both"** (two overlapping pluses) — both panels the same way. A small window opens first: a name (offered, can be changed) and where to — **TO THE LIST** (Enter) or **TO A FILE…** (.json anywhere). Choosing it in the list brings everything back; a tab whose folder is gone is skipped and named in the status line. The star pins a line at the top of the list, **✎** of a saved panel renames it, writes it to a file or removes it from the list.
+
+**SETTINGS · MASKS AND SAVED**: **EXPORT…** — all of your own in one file (mask sets, saved panels, pins, typed masks and extension sets); **IMPORT…** — add from such a file or from a panel saved to a file. Import only adds: what is here stays as it is.
 
 ## Copying and sync
 
@@ -115,6 +129,7 @@ TAR inside GZ, ZSTD, XZ, BZ2 opens straight through. Integrity is checked while 
 
 - **Sizes** — short or in bytes.
 - **Engine** — robocopy or rclone.
+- **Copy times** — as the source (the default, as in TC) or the time of copying, as cp without -p on Linux. Attributes are carried either way. It is for F5 and Ctrl+V; a move (F6), COPY, MIRROR and BISYNC always keep the times.
 - **Archiver** — where the PeaZip engines are: `7z`, `zstd`, `lz4`.
 - **Tools** — the program, PeaZip and rclone with versions and dots; UPDATE downloads the latest version of a tool into `Tools\`, for the program it opens the release page. CHECK NOW asks GitHub without waiting six hours.
 - **Program font and panel font** — family and the size of the middle Aa; the smaller and larger steps follow from it.

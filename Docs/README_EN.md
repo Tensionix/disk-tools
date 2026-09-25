@@ -2,7 +2,7 @@
 
 A two-panel file manager for Windows: tabs and drives as in Total Commander, mask filters, saved panels, robocopy copying with BLAKE3 verification, sync, packing and unpacking — in one window, with nothing to install.
 
-Version 5.6.3. Built on .NET 10 and Avalonia; everything it needs lives in the project folder: the program with its own runtime, the PeaZip archiver, rclone, the editors Microsoft Edit and micro and a portable Windows Terminal (all MIT).
+Version 5.8.1. Built on .NET 10 and Avalonia; everything it needs lives in the project folder: the program with its own runtime, the PeaZip archiver, rclone, the editors Microsoft Edit and micro and a portable Windows Terminal (all MIT).
 
 ## Start
 

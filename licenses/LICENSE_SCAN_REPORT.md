@@ -1,10 +1,10 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Disk Tools** (`audion-disk-tools`)
-- Run: `20260924T192921Z_audion-disk-tools_7b1c0513`
-- Project root: `E:\Release Plus\Audion Disk Tools`
-- Scan root: `E:\Release Plus\Audion Disk Tools`
-- Output: `E:\Release Plus\Audion Disk Tools\licenses`
+- Run: `20260925T175034Z_audion-disk-tools_2fda221d`
+- Project root: `E:\Release\Audion Disk Tools`
+- Scan root: `E:\Release\Audion Disk Tools`
+- Output: `E:\Release\Audion Disk Tools\licenses`
 - Status: **PASS**
 - Components: 7
 - Bundled: 7
