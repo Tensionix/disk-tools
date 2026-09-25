@@ -10,13 +10,12 @@
 
 **Version 5.14.2** · 2026-09-26 · 98.3 MB
 
-- [Direct download](https://dl.audion.dev/disk-tools/5.14.2/Audion_Disk_Tools_v5.14.2.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/disk-tools/5.14.2/Audion_Disk_Tools_v5.14.2_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
-- [GitHub release](https://github.com/Tensionix/disk-tools/releases/tag/v5.14.2)
 
-<p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
+<p align="center"><img src="Docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: c9f2d0c8c97daeb3e0dada5a152a7a4cb3c7798671baacdb1e6505f1c862dfab`
+`SHA-256: 3e18cf368be67269f510aa450a44d240df49d0becee892ffddfa2411d05eaca9`
 
 ---
 
@@ -24,9 +23,11 @@ An **Audion** tool, published by [Tensionix](https://github.com/Tensionix).
 <!-- /audion:release -->
 
 
+[Русский](Docs/README_RU.md)
+
 A two-panel file manager for Windows: tabs and drives as in Total Commander, mask filters, saved panels, robocopy copying with BLAKE3 verification, sync, packing and unpacking — in one window, with nothing to install.
 
-Version 5.8.1. Built on .NET 10 and Avalonia; everything it needs lives in the project folder: the program with its own runtime, the PeaZip archiver, rclone, the editors Microsoft Edit and micro and a portable Windows Terminal (all MIT).
+Built on .NET 10 and Avalonia; everything it needs lives in the project folder: the program with its own runtime, the PeaZip archiver, rclone, the editors Microsoft Edit and micro and a portable Windows Terminal (all MIT).
 
 ## Start
 

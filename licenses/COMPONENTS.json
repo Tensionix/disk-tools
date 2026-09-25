@@ -1,6 +1,6 @@
 {
   "schema": "audion.build_licenses.components.v1",
-  "generated_utc": "2026-09-25T17:50:35Z",
+  "generated_utc": "2026-09-25T18:16:03Z",
   "project_id": "audion-disk-tools",
   "project_name": "Audion Disk Tools",
   "scan_root": "E:\\Release\\Audion Disk Tools",
@@ -24,7 +24,7 @@
         {
           "sha256": "f9aa24d322c0d39ff478dbcd0b3df9fa5514a44419e33fde66421029ec02a985",
           "display_name": "NOTICE-Audion-Launcher.md",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\audion-launcher-bundled\\NOTICE-Audion-Launcher.md",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\audion-launcher-bundled\\NOTICE-Audion-Launcher.md",
           "raw_size": 419
         }
       ],
@@ -70,7 +70,7 @@
         {
           "sha256": "d66c377db5070ef1442d47519a558300e21791bebec2efa56efc6bfbf6e2c643",
           "display_name": "LICENSE-CascadiaCode-OFL-1.1.txt",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\cascadia-code-bundled\\LICENSE-CascadiaCode-OFL-1.1.txt",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\cascadia-code-bundled\\LICENSE-CascadiaCode-OFL-1.1.txt",
           "raw_size": 4489
         }
       ],
@@ -123,13 +123,13 @@
         {
           "sha256": "f3824f778a8667ea76c699e11777ef07e8215bbf8c7d5a2d6745878430264797",
           "display_name": "LICENSE-micro-MIT.txt",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\micro-editor-bundled\\LICENSE-micro-MIT.txt",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\micro-editor-bundled\\LICENSE-micro-MIT.txt",
           "raw_size": 1086
         },
         {
           "sha256": "a30dda668d8542e10b3547302321b056061990d3487228911f83d5a7b753e486",
           "display_name": "NOTICE-micro-Third-Party.txt",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\micro-editor-bundled\\NOTICE-micro-Third-Party.txt",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\micro-editor-bundled\\NOTICE-micro-Third-Party.txt",
           "raw_size": 64173
         }
       ],
@@ -182,7 +182,7 @@
         {
           "sha256": "d25deed12d803f6c973597348627b1939e2d19bbc28fda83c93ea0cde44702da",
           "display_name": "LICENSE-MicrosoftEdit-MIT.txt",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\microsoft-edit-bundled\\LICENSE-MicrosoftEdit-MIT.txt",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\microsoft-edit-bundled\\LICENSE-MicrosoftEdit-MIT.txt",
           "raw_size": 1116
         }
       ],
@@ -235,13 +235,13 @@
         {
           "sha256": "f97bc4bb9b7ae8a653941073678b5c7775e8de44a01c3bcc21e7cdc148b90e61",
           "display_name": "LICENSE-PeaZip-LGPL-3.0.txt",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\peazip-present-in-release\\LICENSE-PeaZip-LGPL-3.0.txt",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\peazip-present-in-release\\LICENSE-PeaZip-LGPL-3.0.txt",
           "raw_size": 7804
         },
         {
           "sha256": "5d22484dddcb312053cd702b456f6d073cfa8033f67e0ad523bfb6549d96398b",
           "display_name": "NOTICE-PeaZip-Bundled-Third-Parties.txt",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\peazip-present-in-release\\NOTICE-PeaZip-Bundled-Third-Parties.txt",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\peazip-present-in-release\\NOTICE-PeaZip-Bundled-Third-Parties.txt",
           "raw_size": 54641
         }
       ],
@@ -312,7 +312,7 @@
         {
           "sha256": "9266eae9c6a441de0f6847f19ac8f09b280d55612b079eca03b3d49b822c1a71",
           "display_name": "LICENSE-rclone-MIT.txt",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\rclone-present-in-release\\LICENSE-rclone-MIT.txt",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\rclone-present-in-release\\LICENSE-rclone-MIT.txt",
           "raw_size": 1115
         }
       ],
@@ -378,7 +378,7 @@
         {
           "sha256": "ad0cf28f3381ca9bb0bf101d127402d44c17bfa0991e1a00bff7ae6679e9dada",
           "display_name": "LICENSE-WindowsTerminal-MIT.txt",
-          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T175034Z_audion-disk-tools_2fda221d\\collector_legal_files\\windows-terminal-bundled\\LICENSE-WindowsTerminal-MIT.txt",
+          "source_path": "E:\\TOOLS\\Audion Build Licenses\\workspace\\runs\\20260925T181602Z_audion-disk-tools_7b2207d1\\collector_legal_files\\windows-terminal-bundled\\LICENSE-WindowsTerminal-MIT.txt",
           "raw_size": 1116
         }
       ],
