@@ -17,7 +17,7 @@
 
 ## The window
 
-At the top — everything that acts on both panels and the whole program: the sections (SETTINGS, MASKS, COLORS), in the middle — the program and its tools with their versions, on the right — the BLAKE3 and NO CACHE boxes, the eye (hidden and system files, Ctrl+H), font Aa, row density, language, theme, ABOUT.
+At the top — everything that acts on both panels and the whole program: the sections (SETTINGS, MASKS, COLORS), in the middle — the program and its tools with their versions, on the right — the BLAKE3 box, MT with the thread count, the NO CACHE box, the eye (hidden and system files, Ctrl+H), font Aa, row density, language, theme, ABOUT.
 
 Below — two panels. The active one has a sea-blue frame: it is the source, the other one the target. At the bottom — the status line with the progress bar and STOP, and the operation buttons under it.
 
@@ -67,8 +67,9 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 | Ctrl+Enter | a terminal: on a folder — in it; .ps1, .cmd, .bat, .exe, .py are run and the window stays open; on another file — in its folder. The terminal is Windows Terminal from Tools\terminal (its config is config\terminal, laid over after every update), else the system one |
 | F5 / F6 | copy / move to the other panel |
 | F7 | new folder |
-| F8 | delete to the Recycle Bin |
-| Shift+Del | delete past the Recycle Bin |
+| F8 | delete what is marked to the Recycle Bin, with a progress bar and STOP; what does not fit into the bin is left alone |
+| Del | the same as F8, plus the Windows progress window |
+| Shift+Del | delete what is marked past the Recycle Bin, with a progress bar and STOP |
 | F11 / F12 | COPY / MIRROR |
 | Alt+F5 / Alt+F9 | pack / unpack |
 | Ctrl+Shift+N / Ctrl+Shift+P, the "names" / "paths" icons in the column between the panels | names or full paths of the marked rows to the clipboard, one per line |
@@ -116,6 +117,8 @@ The scope is the marked items; nothing marked — the whole open folder. Operati
 
 **NO CACHE** — the box beside it. robocopy writes past the Windows file cache (the `/J` switch): data does not pile up in RAM by gigabytes, and the real speed of a slow drive shows at once, without a rush and a drop. Often useful for big files; the speed depends on the drive and the data, and on thousands of small files it can be lower. The device keeps its own cache — safe removal is still needed. The robocopy engine only.
 
+**MT** — a box and the thread count beside it (1 to 128; the arrows or the mouse wheel over the number). robocopy copies in that many threads (the `/MT` switch), rclone moves that many files at once (`--transfers`, BISYNC too). Wins on thousands of small files, on SSDs and over the network. Big files between hard disks copy faster in one thread: the heads do not jump between files. Unchecked — one thread. On by default, 8 threads.
+
 ## Packing — Alt+F5
 
 The marked items are packed into the other panel (a panel on the drive list means next to the source).
@@ -154,7 +157,7 @@ The colour window: a saturation-value square, a hue strip, fields R, G, B and `#
 
 ## Where things are kept
 
-- `config\settings.json` — the look and the choices: language, theme, fonts, density, colours and grain, engine, BLAKE3, NO CACHE, packing choices. Survives the cleanup.
+- `config\settings.json` — the look and the choices: language, theme, fonts, density, colours and grain, engine, BLAKE3, MT and the thread count, NO CACHE, packing choices. Survives the cleanup.
 - `config\history\session.json` — the tabs of both panels, the window, the MASKS draft, BISYNC pairs;
 - `config\history\library.json` — your mask sets, saved panels, pinned items;
 - `config\history\mask_cache.json`, `profile_extension_pins.json` — history of masks and extension sets;

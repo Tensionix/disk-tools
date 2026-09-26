@@ -1,10 +1,10 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Disk Tools** (`audion-disk-tools`)
-- Run: `20260925T202406Z_audion-disk-tools_879fa9c3`
-- Project root: `E:\Release\Audion Disk Tools`
-- Scan root: `E:\Release\Audion Disk Tools`
-- Output: `E:\Release\Audion Disk Tools\licenses`
+- Run: `20260926T221334Z_audion-disk-tools_141be03a`
+- Project root: `E:\Release Plus\Audion Disk Tools`
+- Scan root: `E:\Release Plus\Audion Disk Tools`
+- Output: `E:\Release Plus\Audion Disk Tools\licenses`
 - Status: **PASS**
 - Components: 7
 - Bundled: 7
@@ -22,7 +22,7 @@ No issues detected.
 | Cascadia Code | `UNCHANGED` | bundled | bundled |
 | micro editor | `UNCHANGED` | bundled | bundled |
 | Microsoft Edit | `UNCHANGED` | bundled | bundled |
-| PeaZip | `UNCHANGED` | present-in-release | present-in-release |
+| PeaZip | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | present-in-release | present-in-release |
 | rclone | `UNCHANGED` | 1.75.1 | 1.75.1 |
 | Windows Terminal | `UNCHANGED` | bundled | bundled |
 
