@@ -1,16 +1,16 @@
 {
   "schema": "audion.build_licenses.pack_manifest.v1",
-  "generated_utc": "2026-09-27T12:09:50Z",
-  "run_id": "20260927T120949Z_audion-disk-tools_d8c6d536",
+  "generated_utc": "2026-09-27T19:54:06Z",
+  "run_id": "20260927T195405Z_audion-disk-tools_240b12a6",
   "project_id": "audion-disk-tools",
   "project_name": "Audion Disk Tools",
-  "scan_root": "E:\\Release Plus\\Audion Disk Tools",
-  "output_dir": "E:\\Release Plus\\Audion Disk Tools\\licenses",
+  "scan_root": ".",
+  "output_dir": "licenses",
   "files": [
     {
       "name": "THIRD_PARTY_NOTICES.txt",
-      "sha256": "1506538fbfbbe2c4fcc86c6e66b625d2fff466cedeacce246cce0c613e81bdae",
-      "size": 144618
+      "sha256": "abdf983e74e3f80a6eb6c52d2437faa5036fcbacbeb91e669facc388947f0705",
+      "size": 143610
     },
     {
       "name": "SOURCE_CODE_AVAILABILITY.txt",
@@ -19,8 +19,8 @@
     },
     {
       "name": "COMPONENTS.json",
-      "sha256": "6b438b2d417bd1ae8569a00172549143553e569e6db5d9d33779b21f6e202950",
-      "size": 17478
+      "sha256": "bdaa56921a5061344891ba25dca3015a469ef8cc0e781aadcca7ee758fc5306b",
+      "size": 16364
     },
     {
       "name": "_records.json",
@@ -29,8 +29,8 @@
     },
     {
       "name": "LICENSE_SCAN_REPORT.md",
-      "sha256": "4a40331eeca660969e029e5d0c9fc2ff877992c7a71a59dcda3007862733a1b0",
-      "size": 1067
+      "sha256": "a1dd8a7294c77d70a5422c7dbaf0433fbbb1db6d2341ce16d7e57d2cf49a560c",
+      "size": 981
     }
   ]
 }
