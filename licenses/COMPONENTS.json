@@ -1,6 +1,6 @@
 {
   "schema": "audion.build_licenses.components.v1",
-  "generated_utc": "2026-09-27T21:25:45Z",
+  "generated_utc": "2026-09-27T22:14:35Z",
   "project_id": "audion-disk-tools",
   "project_name": "Audion Disk Tools",
   "scan_root": ".",
@@ -129,7 +129,8 @@
       ],
       "metadata": {
         "embedded_in": [
-          "Source/Views/FilePanel.axaml"
+          "Source/Views/FilePanel.axaml",
+          "Source/Views/FilePanel.axaml.cs"
         ],
         "embedding": "Icon outlines from lucide-static 1.48.0, redrawn or generated into the program's code. Icons derived from Feather are MIT (Cole Bemis), listed in the licence file."
       },
