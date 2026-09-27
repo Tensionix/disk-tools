@@ -8,14 +8,15 @@
   <a href="https://github.com/Tensionix/disk-tools/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Tensionix/disk-tools?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600"></a>
 </p>
 
-**Version 5.20.1** · 2026-09-27 · 98.9 MB
+**Version 5.31.0** · 2026-09-27 · 99.1 MB
 
-- [Direct download](https://audion.dev/get/disk-tools/5.20.1/Audion_Disk_Tools_v5.20.1_Full.zip) — unmetered, no rate limits
+- [Direct download](https://dl.audion.dev/disk-tools/5.31.0/Audion_Disk_Tools_v5.31.0_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
+- [GitHub release](https://github.com/Tensionix/disk-tools/releases/tag/v5.31.0)
 
 <p align="center"><img src="Docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: b9fbe3de89c4eb42551e56243a10107d6db823518424ff5d00270c1a32bf54cb`
+`SHA-256: 225584fc5a636b2cab6938a3348ddd6ad29669530a7dfed30067ac5c67b3833c`
 
 ---
 
