@@ -10,13 +10,12 @@
 
 **Version 5.31.0** · 2026-09-27 · 99.1 MB
 
-- [Direct download](https://dl.audion.dev/disk-tools/5.31.0/Audion_Disk_Tools_v5.31.0.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/disk-tools/5.31.0/Audion_Disk_Tools_v5.31.0_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
-- [GitHub release](https://github.com/Tensionix/disk-tools/releases/tag/v5.31.0)
 
 <p align="center"><img src="Docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: 94f24e92429092c0825341fa29855108344dcb5149b68cad840d96f2f10bb5fd`
+`SHA-256: 225584fc5a636b2cab6938a3348ddd6ad29669530a7dfed30067ac5c67b3833c`
 
 ---
 
@@ -36,7 +35,7 @@ Built on .NET 10 and Avalonia; everything it needs lives in the project folder: 
 
 ## What it does
 
-- **Two panels** with tabs, drives, breadcrumbs and row colours by the rules of a Total Commander theme (dark and light).
+- **Two panels** with tabs, drives, breadcrumbs and row colours by the file types of MASKS (dark and light themes).
 - **Mask filter** per panel: shows only the files you need together with their folder structure; copying from a filtered panel takes only them.
 - **Saved panels**: the folder and the marks of one or both panels — there and back in one click.
 - **Copy and move** (F5, F6) through robocopy: NTFS streams, creation and modification times, attributes, folders in 8 threads. Or rclone — switched in SETTINGS.

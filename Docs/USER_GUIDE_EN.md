@@ -7,6 +7,7 @@
 - [Keys](#keys)
 - [DIFF — Shift+F2](#diff--shiftf2)
 - [Masks and the filter](#masks-and-the-filter)
+- [Search](#search)
 - [Saved panels](#saved-panels)
 - [Copying and sync](#copying-and-sync)
 - [Packing — Alt+F5](#packing--altf5)
@@ -27,9 +28,9 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 
 - **Three rows above the list** that never trade places: drives, the panel controls, tabs. Only the tabs wrap; the window and the splitter stop before buttons could overlap.
 - **Drives** — the first row: DRIVES opens the drive list, a click on a drive returns to the last folder opened on it, as in TC; the chevron at the end of the row lists every drive with its label and free space (Alt+F1 — the left panel, Alt+F2 — the right), the drive letter picks it at once.
-- **Controls** — the second row: only what changes the view of this panel: up, reread, mark by mask, Detailed (a table) / Simple (the name column alone), on the right by the masks list - a new file in this panel's folder (Shift+F4 - in the active one), save this panel (a plus) / both panels (two pluses); on the right masks and saved.
-- **The column between the panels** — what is done with files, like the vertical bar of TC; it works on the active panel: ⇄ swap the panels (Ctrl+U) · copy, cut, paste through the Windows clipboard (Ctrl+C, Ctrl+X, Ctrl+V — to and from Explorer too) · names and paths to the clipboard (Ctrl+Shift+N, Ctrl+Shift+P) · find in the panel (Ctrl+F) · unblock downloaded files. What an icon does is in its tooltip. The splitter drags by the free space of the column.
-- **Tabs**: `+` or Ctrl+T — a new one with the same folder; double click, Ctrl+W or the middle button — close; right button — pin (a pinned tab stays on the left, does not close, and leaving its folder opens a new tab); Shift + right button — rename (the tab caption changes, not the folder); drag to change the order. In SETTINGS · TABS: a tab width limit, a row that wraps or scrolls with the wheel, and the right button — pin at once or a pin / rename menu.
+- **Controls** — the second row: only what changes the view of this panel: up, reread, mark by mask, Detailed (a table) / Simple (the name column alone), on the right by the masks list - a new file in this panel's folder (Shift+F4 - in the active one), save this panel (a floppy disk) / both panels (two floppy disks); on the right masks and saved.
+- **The column between the panels** — what is done with files, like the vertical bar of TC; it works on the active panel: ⇄ swap the panels (Ctrl+U) · copy, cut, paste through the Windows clipboard (Ctrl+C, Ctrl+X, Ctrl+V — to and from Explorer too) · names and paths to the clipboard (Ctrl+Shift+N, Ctrl+Shift+P) · search (Ctrl+F) · unblock downloaded files. What an icon does is in its tooltip. The button icons come from the Lucide set. The splitter drags by the free space of the column.
+- **Tabs**: `+` or Ctrl+T — a new one with the same folder; double click, Ctrl+W or the middle button — close; the active tab carries **⋮** — its menu: pin, rename, the folder name back, **drive name in the caption** ("U|Projects" — for folders of one name on two drives), **label** — the meaning of the tab ("video here", "documents here"): a dot of that file family's colour before the caption; not a filter, the folder shows everything as usual, **duplicate** or **move to the other panel**, **delete the tab**; right button — pin (a pinned tab stays on the left, does not close, and leaving its folder opens a new tab); Shift + right button — rename (the tab caption changes, not the folder); drag to change the order; an unpinned tab dropped among the pinned ones is pinned in that place, and a tab pinned by the right button joins the end of the pinned group. In SETTINGS · TABS: a tab width limit, a row that wraps or scrolls with the wheel, and the right button — pin at once or a pin / rename menu.
 - **`\` over the icon column**, left of "NAME" — to the root of this tab's drive.
 - **Breadcrumbs** of the path — a click on any part goes there.
 - **Columns** NAME, TYPE, DATE, TIME, SIZE; a click on a header sorts, folders always on top.
@@ -50,18 +51,19 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 | Shift+Space | the exact size of the row in bytes — in the panel status line, until the next action |
 | Home / ← , End / → | to the start, to the end of the list |
 | Ctrl+A | mark all or clear all |
-| * (numeric keypad) | invert the marks of the files (the icon - a square filled along its diagonal); folders stay, as in TC |
+| * (numeric keypad) | invert the marks of the files (the icon - a circle of two halves); folders stay, as in TC |
 | Alt+Shift+Enter | sizes of every folder in the list |
 | Ctrl+R | reread the panel |
 | Ctrl+U | swap the panels (the ⇄ button of a panel) |
 | Alt+F1 / Alt+F2 | the drive list of the left / right panel (the chevron in the drive row); the drive letter goes straight there |
 | Ctrl+H | hidden and system files: show or hide, for both panels (the eye at the top) |
 | Shift+F2 | DIFF (the button below): a window of its own with the differences between the two panels' folders, down to the files; with marks in the panels - only the marked. An open window comes forward and compares again |
-| Ctrl+F | find in the panel: only the names with this text stay in the list; Esc — off, Enter or ↓ — to the list |
+| Ctrl+F, Alt+F7 | search: the Search window — name, MASKS types, time, a regular expression; the found files as a flat list in the panel; Esc or Ctrl+B — back to the folder |
+| F | narrow the list: only the names with this text stay; Esc — off, Enter or ↓ — to the list |
 | Ctrl+C / Ctrl+X / Ctrl+V | copy / cut the marked rows to the Windows clipboard, paste from it into the active panel's folder — to and from Explorer too; pasting runs in the queue, like F5 and F6 |
 | Shift+F4 | a new file in the active panel: a name and an extension (chips; a name with a dot keeps its own), straight into the editor ("OPEN IN EDITOR"); the page-with-plus icon above each panel does the same for that panel |
 | Menu key, Shift+F10, right button | Explorer menu |
-| F1 | the hot key memo; the user guide and the documentation folder are in the ABOUT menu |
+| F1 | the hot key memo; the user guide (MD, and PDF for those whose .md does not open) and the documentation folder are in the ABOUT menu |
 | F2 | rename |
 | F4 | open the file in the editor: Microsoft Edit from Tools\edit by default; micro (Tools\micro), Notepad or one of your own — SETTINGS · EDITOR AND TERMINAL |
 | Ctrl+Enter | a terminal: on a folder — in it; .ps1, .cmd, .bat, .exe, .py are run and the window stays open; on another file — in its folder. The terminal is Windows Terminal from Tools\terminal (its config is config\terminal, laid over after every update), else the system one |
@@ -92,13 +94,42 @@ A window of its own beside the main one: the panels stay in view and at work - d
 
 - **✱** above a panel — mark rows by mask: `*.zip 2026-* *aud*`.
 - **The "masks and saved" list** — a mask group from the list turns the panel into a filter: only matching files and the folders that hold them are shown. Copying from such a panel takes only them. Remove the filter with Esc or "× FILTER" at the bottom.
+- **How a mask is read** — one rule everywhere (MASKS, mark by mask, search): a word is a part of the name (`example` → `*example*`, it finds `example` without an extension too), a leading dot is an extension (`.png` → `*.png`), a name with a dot stays as is (`readme.md`), with `*` and `?` — a mask as written; `*.` — files without an extension.
+- **BY TIME** in the same list: changed within an hour, a day (today and yesterday), a week — exactly what is painted "not older than 1 hour / day / week". It is a filter, as a mask group: copying and moving from such a panel take only these files (robocopy `/MAXAGE`, rclone `--max-age`), and so do the count before F11 and the BLAKE3 check. MIRROR and BISYNC do not run under a filter.
+- **Row colours** take their masks from MASKS: each family (documents, images, archives, video, audio, apps, temporary) is painted with its colour of the theme. The themes are `config\colors\themes.json` (dark and light, carried over from the owner's TC themes): they hold only colours and the order of the rules, what to paint is up to the MASKS family. "Development and config" is not painted. Scripts that start a process (`bat`, `cmd`, `ps1`, `vbs`) are executables; code that only lies there (`js`, `py`, `cpp`, `psm1`) is development. The mask `*.` is files without an extension: `id_rsa`, `credentials`, `README`, `.env`, `.bashrc` (keys, passwords, configs, Linux files).
 - **MASKS section** — your own sets: masks as text and including or excluding extensions by groups. Pinned sets come first in the panel list.
 
 MIRROR and BISYNC do not run under a filter: a mirror is a full copy, masks are not its scenario.
 
+## Search
+
+**Ctrl+F**, **Alt+F7** or the **CTRL+F SEARCH** button at the bottom (next to DIFF) open the Search window — a window of its own, as in Total Commander: it has its own taskbar button and the program stays free while it searches. Already open, it comes to the front and takes the folder of the active panel. The magnifier in the middle column is the quick filter **F** over the list in view.
+
+- **Where** — the folder, with all its subfolders: the folder of the active panel at first (on the list of drives — the other panel's, else the one searched last). Until a path is typed by hand, Where follows the panel: back in the search window, it holds the folder the active panel is in now. **PANEL FOLDER** takes it again after a typed path.
+- **Search** — one line for everything: first the badges of the pressed MASKS groups and families — like their buttons, in their colours (× or Backspace in an empty field take one off), then your own keys, comma separated; the line grows only as it fills:
+  - an extension (`.dwg`, `*.max`, `*.` — no extension) is added to the groups: any of the types fits;
+  - a word or a mask is the name: a word is found anywhere in the name (`report`), a mask is as in MASKS (`2026-*`); any of them fits;
+  - `/…/` is a .NET regular expression on the name, case-insensitive (`/^IMG_\d{4}/`); a mistake in it shows at once and FIND waits for the fix.
+
+  Under the field, a summary of what will be found; **Enter** — find.
+- **Types** — **MASKS GROUPS ▾**: the families in lines with a hairline between them; the family button on the left, its groups on the right. A pressed group becomes a badge in the field; the family button puts the whole family in as one badge, and its groups go dim — they are in it already. Nothing pressed and no extensions — every type. While the query is being made the groups are open; once a search starts they fold and the table takes the whole height; the same button opens them again.
+- **Changed** — any time, within an hour, a day, a week: the same as the row colours.
+
+**FIND** (Enter in the field or in the Where line) walks the tree in the background: the table fills as it goes, the progress line tells how many were found, how many folders and files were looked at and where the search is now. **STOP** or **Esc** end it at once, even in the middle of a big folder; what was found stays. The search stops by itself at 500,000 finds — the progress line says "limit: … this is not the whole answer": the rest of the tree was not looked at, narrow the query. The table sorts by File, Size and Changed; the names are in the panel's colours.
+
+With what was found:
+
+- **TO PANEL** — the found files as a flat list in the active panel (names with their subfolders): exactly the rows of the table, after STOP too — the tree is not read again. A refresh of the panel (Ctrl+R, the end of an operation, changes on disk) updates the size and time of these files and drops the gone ones, but adds none: a new search is FIND only. From there everything goes to the other panel: **F5** / **F6** — copy or move (the files land in their subfolders), **Alt+F5** — pack; **F8** — delete right here. Folders from the results are not copied, COPY, MIRROR and BISYNC do not run from them. **Esc** or **Ctrl+B** in the panel — back to the folder.
+- **GO TO FILE**, a double click or **Enter** in the table — the file's folder in the active panel, the cursor on it, the main window in front.
+- **CLEAR** — the table, the field and the groups empty, the folder stays; the query is made anew.
+
+The buttons are one line at the bottom: CLEAR, CLOSE, TO PANEL, GO TO FILE on the left, FIND and STOP on the right.
+
+The window keeps its place and size; it closes with the program.
+
 ## Saved panels
 
-The **"save the panel"** icon (a thick plus) remembers the panel with all its tabs: folders, marks, filters, pins. **"Save both"** (two overlapping pluses) — both panels the same way. A small window opens first: a name (offered, can be changed) and where to — **TO THE LIST** (Enter) or **TO A FILE…** (.json anywhere). Choosing it in the list brings everything back; a tab whose folder is gone is skipped and named in the status line. The star pins a line at the top of the list, **✎** of a saved panel renames it, writes it to a file or removes it from the list.
+The **"save the panel"** icon (a floppy disk) remembers the panel with all its tabs: folders, marks, filters, pins. **"Save both"** (two floppy disks) — both panels the same way. A small window opens first: a name (offered, can be changed) and where to — **TO THE LIST** (Enter) or **TO A FILE…** (.json anywhere; the window opens in Downloads). The name can be picked from a drop-down of the saved ones: then the first button turns into **OVERWRITE** (amber) — that record takes the panels as they are now, its name and star stay. Choosing a record in the masks and saved list brings everything back; a tab whose folder is gone is skipped and named in the status line. Before that, what both panels showed saves itself as **Latest** — one record, written over every time; Latest renamed becomes an ordinary record and is no longer written over. The star pins a line at the top of the list, **✎** of a saved panel renames it, writes it to a file or **DELETES** it from the list (folders and .json files on the disks are not touched). Long names in the list end in an ellipsis, the full name is in the tooltip.
 
 **SETTINGS · MASKS AND SAVED**: **EXPORT…** — all of your own in one file (mask sets, saved panels, pins, typed masks and extension sets); **IMPORT…** — add from such a file or from a panel saved to a file. Import only adds: what is here stays as it is.
 
@@ -151,7 +182,7 @@ TAR inside GZ, ZSTD, XZ, BZ2 opens straight through. Integrity is checked while 
 
 ## COLORS
 
-Each theme has its own colours: window and frame backgrounds, the list background (top and bottom of the gradient), column headers, text, cursor, the active panel frame, marks, accents, the progress bar — and the file type colours from the TC rules. A changed colour shows its code highlighted, ↺ brings the original back. **Grain** 0–3 — film texture over the list background; it also smooths the steps of the gradient.
+Each theme has its own colours: window and frame backgrounds, the list background (top and bottom of the gradient), column headers, text, cursor, the active panel frame, marks, accents, the progress bar — and the file type colours from the rules of the theme. A changed colour shows its code highlighted, ↺ brings the original back. **Grain** 0–3 — film texture over the list background; it also smooths the steps of the gradient.
 
 The colour window: a saturation-value square, a hue strip, fields R, G, B and `#hex` — drag or type, everything follows.
 

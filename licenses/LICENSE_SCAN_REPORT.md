@@ -1,13 +1,13 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Disk Tools** (`audion-disk-tools`)
-- Run: `20260926T221334Z_audion-disk-tools_141be03a`
+- Run: `20260927T120949Z_audion-disk-tools_d8c6d536`
 - Project root: `E:\Release Plus\Audion Disk Tools`
 - Scan root: `E:\Release Plus\Audion Disk Tools`
 - Output: `E:\Release Plus\Audion Disk Tools\licenses`
 - Status: **PASS**
-- Components: 7
-- Bundled: 7
+- Components: 8
+- Bundled: 8
 - Optional runtime: 0
 
 ## Issues
@@ -20,9 +20,10 @@ No issues detected.
 |---|---|---:|---:|
 | Audion launcher | `UNCHANGED` | bundled | bundled |
 | Cascadia Code | `UNCHANGED` | bundled | bundled |
+| Lucide | `NEW_COMPONENT_APPROVED_PROFILE` | - | 1.48.0 |
 | micro editor | `UNCHANGED` | bundled | bundled |
 | Microsoft Edit | `UNCHANGED` | bundled | bundled |
-| PeaZip | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | present-in-release | present-in-release |
+| PeaZip | `UNCHANGED` | present-in-release | present-in-release |
 | rclone | `UNCHANGED` | 1.75.1 | 1.75.1 |
 | Windows Terminal | `UNCHANGED` | bundled | bundled |
 
