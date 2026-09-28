@@ -1,7 +1,7 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Disk Tools** (`audion-disk-tools`)
-- Run: `20260928T060923Z_audion-disk-tools_aecf3260`
+- Run: `20260928T074005Z_audion-disk-tools_5f9c60c7`
 - Scan root (from the project root): `.`
 - Output (from the project root): `licenses`
 - Status: **PASS**
@@ -17,7 +17,7 @@ No issues detected.
 
 | Component | Change | Old | New |
 |---|---|---:|---:|
-| Audion launcher | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | bundled | bundled |
+| Audion launcher | `UNCHANGED` | bundled | bundled |
 | Cascadia Code | `UNCHANGED` | bundled | bundled |
 | Lucide | `UNCHANGED` | 1.48.0 | 1.48.0 |
 | micro editor | `UNCHANGED` | bundled | bundled |
