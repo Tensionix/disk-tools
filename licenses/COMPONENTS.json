@@ -1,6 +1,6 @@
 {
   "schema": "audion.build_licenses.components.v1",
-  "generated_utc": "2026-09-28T00:06:14Z",
+  "generated_utc": "2026-09-28T06:09:24Z",
   "project_id": "audion-disk-tools",
   "project_name": "Audion Disk Tools",
   "scan_root": ".",
@@ -15,7 +15,7 @@
       "bundled": true,
       "optional_runtime": false,
       "provider": "",
-      "artifact_sha256": "05330387a1c41c8cbdcad41b354c0e444d1482c5843a132f6428ecfde2aec043",
+      "artifact_sha256": "d5b96456bbd7c96c03b596697989de2eb234948db7da830d81594e99a3d7f37b",
       "artifact_path": "Start.exe",
       "obligation_class": "permissive",
       "redistributable": true,
@@ -129,6 +129,7 @@
       ],
       "metadata": {
         "embedded_in": [
+          "Source/MainWindow.axaml",
           "Source/MainWindow.axaml.cs",
           "Source/Views/FilePanel.axaml",
           "Source/Views/FilePanel.axaml.cs"
