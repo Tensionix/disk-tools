@@ -10,13 +10,13 @@
 
 **Version 5.36.0** · 2026-09-29 · 99.2 MB
 
-- [Direct download](https://dl.audion.dev/disk-tools/5.36.0/Audion_Disk_Tools_v5.36.0_Full.zip) — unmetered, no rate limits
+- [Direct download](https://dl.audion.dev/disk-tools/5.36.0/Audion_Disk_Tools_v5.36.0.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
 - [GitHub release](https://github.com/Tensionix/disk-tools/releases/tag/v5.36.0)
 
 <p align="center"><img src="Docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: b87fdf7054fb9109f111b5cb1ee909668c2d6c5fe9bfb355def58aef5a4b281a`
+`SHA-256: 8c1701e156688a4494daf98331f97bd9cbc95376f52c5e01a4d6f8c696b6e868`
 
 ---
 
