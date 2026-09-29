@@ -12,7 +12,7 @@ Built on .NET 10 and Avalonia; everything it needs lives in the project folder: 
 
 ## What it does
 
-- **Two panels** with tabs, drives, breadcrumbs and row colours by the file types of MASKS (dark and light themes).
+- **Two panels** with tabs, drives, breadcrumbs and row colours by the file types of MASKS (the Audion Dark, Audion Code Dark and Audion Light themes).
 - **Mask filter** per panel: shows only the files you need together with their folder structure; copying from a filtered panel takes only them.
 - **Saved panels**: the folder and the marks of one or both panels — there and back in one click.
 - **Copy and move** (F5, F6) through robocopy: NTFS streams, creation and modification times, attributes, folders in 8 threads. Or rclone — switched in SETTINGS.

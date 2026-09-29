@@ -18,7 +18,7 @@
 
 ## The window
 
-At the top — everything that acts on both panels and the whole program: the sections (SETTINGS, MASKS, COLORS), in the middle — the program and its tools with their versions, on the right — the BLAKE3 box, MT with the thread count, the NO CACHE box, the eye (hidden and system files, Ctrl+H), font Aa, row density, language, theme, ABOUT.
+At the top — everything that acts on both panels and the whole program: the sections (SETTINGS, MASKS, COLORS), in the middle — the program and its tools with their versions, on the right — the BLAKE3 box, MT with the thread count, the NO CACHE box, the eye (hidden and system files, Ctrl+H), font Aa, row density, language, theme, ABOUT. The sun opens three themes: **Audion Dark** (the default), **Audion Code Dark** (the Code Dark theme of Audion DocFlow — warm graphite, a blue accent, danger in burnt orange) and **Audion Light**.
 
 Below — two panels. The active one has a sea-blue frame: it is the source, the other one the target. At the bottom — the status line with the progress bar and STOP, and the operation buttons under it.
 
@@ -185,7 +185,7 @@ TAR inside GZ, ZSTD, XZ, BZ2 opens straight through. Integrity is checked while 
 
 ## COLORS
 
-Each theme has its own colours: window and frame backgrounds, the list background (top and bottom of the gradient), column headers, text, cursor, the active panel frame, marks, accents, the progress bar — and the file type colours from the rules of the theme. A changed colour shows its code highlighted, ↺ brings the original back. **Grain** 0–3 — film texture over the list background; it also smooths the steps of the gradient.
+Each theme has its own colours (Audion Dark, Audion Code Dark and Audion Light are set up apart): window and frame backgrounds, the list background (top and bottom of the gradient), column headers, text, cursor, the active panel frame, marks, accents, the progress bar — and the file type colours from the rules of the theme. A changed colour shows its code highlighted, ↺ brings the original back. **Grain** 0–3 — film texture over the list background; it also smooths the steps of the gradient.
 
 The colour window: a saturation-value square, a hue strip, fields R, G, B and `#hex` — drag or type, everything follows.
 
