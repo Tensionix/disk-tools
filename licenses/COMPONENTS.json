@@ -1,6 +1,6 @@
 {
   "schema": "audion.build_licenses.components.v1",
-  "generated_utc": "2026-09-29T08:04:34Z",
+  "generated_utc": "2026-09-29T21:22:52Z",
   "project_id": "audion-disk-tools",
   "project_name": "Audion Disk Tools",
   "scan_root": ".",

@@ -185,7 +185,7 @@ TAR inside GZ, ZSTD, XZ, BZ2 opens straight through. Integrity is checked while 
 
 ## COLORS
 
-Each theme has its own colours (Audion Dark, Audion Code Dark and Audion Light are set up apart): window and frame backgrounds, the list background (top and bottom of the gradient), column headers, text, cursor, the active panel frame, marks, accents, the progress bar — and the file type colours from the rules of the theme. A changed colour shows its code highlighted, ↺ brings the original back. **Grain** 0–3 — film texture over the list background; it also smooths the steps of the gradient.
+Each theme has its own colours (Audion Dark, Audion Code Dark, Audion Vault Dark and Audion Light are set up apart): window and frame backgrounds, the list background (top and bottom of the gradient), column headers, text, cursor, the active panel frame, marks, accents, the progress bar — and the file type colours from the rules of the theme. A changed colour shows its code highlighted, ↺ brings the original back. **Grain** 0–3 — film texture over the list background; it also smooths the steps of the gradient.
 
 The colour window: a saturation-value square, a hue strip, fields R, G, B and `#hex` — drag or type, everything follows.
 

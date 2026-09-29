@@ -10,13 +10,12 @@
 
 **Version 5.37.0** · 2026-09-30 · 99.2 MB
 
-- [Direct download](https://dl.audion.dev/disk-tools/5.37.0/Audion_Disk_Tools_v5.37.0.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/disk-tools/5.37.0/Audion_Disk_Tools_v5.37.0_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
-- [GitHub release](https://github.com/Tensionix/disk-tools/releases/tag/v5.37.0)
 
 <p align="center"><img src="Docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: aa97e63ca16891ebeac5742f20ea8deb79d290c1a064cb6632cb1a3100f7fff6`
+`SHA-256: 50e2bba440a21c21e40aa4e09024799854a6d65127aac2b8cf5fedea8332f5d6`
 
 ---
 
@@ -36,7 +35,7 @@ Built on .NET 10 and Avalonia; everything it needs lives in the project folder: 
 
 ## What it does
 
-- **Two panels** with tabs, drives, breadcrumbs and row colours by the file types of MASKS (the Audion Dark, Audion Code Dark and Audion Light themes).
+- **Two panels** with tabs, drives, breadcrumbs and row colours by the file types of MASKS (the Audion Dark, Audion Code Dark, Audion Vault Dark — the interface in the colours of Audion DPI Manager, only the ground of the panels changes — and Audion Light themes).
 - **Mask filter** per panel: shows only the files you need together with their folder structure; copying from a filtered panel takes only them.
 - **Saved panels**: the folder and the marks of one or both panels — there and back in one click.
 - **Copy and move** (F5, F6) through robocopy: NTFS streams, creation and modification times, attributes, folders in 8 threads. Or rclone — switched in SETTINGS.
