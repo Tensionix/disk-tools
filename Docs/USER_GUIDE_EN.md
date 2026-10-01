@@ -11,6 +11,7 @@
 - [Saved panels](#saved-panels)
 - [Copying and sync](#copying-and-sync)
 - [Packing — Alt+F5](#packing--altf5)
+- [Inside an archive — Enter](#inside-an-archive--enter)
 - [Unpacking — Alt+F9](#unpacking--altf9)
 - [SETTINGS](#settings)
 - [COLORS](#colors)
@@ -43,7 +44,7 @@ A section opens in place of the panels and closes with the same button, the ✕ 
 | --- | --- |
 | Tab | other panel |
 | Ctrl+Tab, Ctrl+Shift+Tab | next and previous tab |
-| Enter, double click | open a folder or a file; on ".." — up |
+| Enter, double click | enter a folder or an archive, open a file; on ".." — up |
 | Backspace | up, the cursor lands on the folder you left |
 | Alt+← / Alt+→ | back and forward through the folders of this tab (the arrows of the control row, the mouse side buttons) |
 | Ctrl+B | flat view: every file of every subfolder in one list, with its path from this folder; with a mask filter - "every .pdf of this tree"; F5 and F6 put the files into the target with their subfolders. COPY, MIRROR, BISYNC, packing and comparing work from the usual view. Leaving the folder turns the view off |
@@ -163,6 +164,17 @@ The marked items are packed into the other panel (a panel on the drive list mean
 - **Name**: prefix and suffix; `N` as a separate word becomes the object number.
 - **SFX**: where it offers to unpack (a variable and a path with `{name}`), a wrapper without compression.
 - **After**: test the archive (`7z t`, zstd's own test for zstd); delete sources — to the Recycle Bin and only once all their archives are made and tested.
+
+## Inside an archive — Enter
+
+Enter on an archive shows what it holds in place of the folder: ZIP, 7Z, RAR, TAR, ISO and a TAR in GZ, BZ2, XZ, ZSTD (the first volume of a split set). The path line carries the archive and its folders after the folders of the disk; Enter on a folder goes deeper, `..` and Backspace come back, from the root of the archive — to its folder on the disk. The status line of the panel says "in the archive name.zip, read-only".
+
+- **F5** unpacks the marked objects (with no marks — the row under the cursor) into the folder of the other panel as they lie on the screen: a folder with everything in it. Ctrl+A and F5 at the root — the whole archive. Names already taken follow the rule of the Alt+F9 window: rename, replace or skip; folders merge.
+- **Enter on a file** opens a copy of it from a temporary folder with the program Windows gives it — for a look. The copy is read-only: the archive does not change.
+- **The password** is asked once per archive and kept nowhere.
+- **Read-only**: F2, F4, F6, F7, F8, Alt+F5, Ctrl+C, Ctrl+V, COPY, MIRROR, DIFF do not work inside an archive and say so. Nothing can be copied into an archive — packing stays with Alt+F5.
+- Other files 7-Zip can read (DOCX, EXE, CAB, a lone GZ) open with their own program by Enter, as before; to open an archive with an outside program — the Explorer menu on the right button.
+- Entries with unsafe paths — climbing out of the archive (`..\`), naming a drive, or ending a name with a dot or a space — are not shown; their number is in the status line. From an archive that holds even one of them F5 and Enter on a file take nothing out: such an archive is made with intent or broken.
 
 ## Unpacking — Alt+F9
 

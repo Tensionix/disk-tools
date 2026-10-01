@@ -20,6 +20,7 @@ Built on .NET 10 and Avalonia; everything it needs lives in the project folder: 
 - **BLAKE3 check**: after copying, source and copy are read again, the copy from disk past the cache; a move deletes the source only after a match.
 - **Packing** (ALT+F5): ZIP, 7Z, SFX, TAR, TAR.GZ, TAR.ZSTD; compression, AES-256 encryption, name prefixes and suffixes with a number, layout, archive test after creation.
 - **Unpacking** (ALT+F9) in batches: into the other panel or here, "smart" or each archive into its own folder; volumes and TAR inside GZ/ZSTD/XZ open on their own.
+- **Entering an archive** by Enter: ZIP, 7Z, RAR, TAR, ISO and a TAR in GZ/BZ2/XZ/ZSTD open like a folder; F5 unpacks the marked objects into the other panel, Ctrl+A and F5 - the whole archive. Read-only inside.
 - **Explorer menu** on the right button, Recycle Bin on F8, past it — SHIFT+DEL.
 - **Three interface languages**: Russian, English, German — on the fly.
 - **COLORS**: your own colours for the window, panels and file types, per theme; the list background is a gradient with film grain.

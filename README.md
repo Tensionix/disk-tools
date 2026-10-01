@@ -10,13 +10,12 @@
 
 **Version 5.40.1** · 2026-10-01 · 106.7 MB
 
-- [Direct download](https://dl.audion.dev/disk-tools/5.40.1/Audion_Disk_Tools_v5.40.1.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/disk-tools/5.40.1/Audion_Disk_Tools_v5.40.1_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
-- [GitHub release](https://github.com/Tensionix/disk-tools/releases/tag/v5.40.1)
 
 <p align="center"><img src="Docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: e01af7fd89f74e98efc0ce2c692dde8170427444fef2b2abe3f4c36507f20fa8`
+`SHA-256: 0d8359b4e1d6376a6ad86cf0a5b45555998a9c8cbba29bb97dbcbcb4b2795832`
 
 ---
 
@@ -44,6 +43,7 @@ Built on .NET 10 and Avalonia; everything it needs lives in the project folder: 
 - **BLAKE3 check**: after copying, source and copy are read again, the copy from disk past the cache; a move deletes the source only after a match.
 - **Packing** (ALT+F5): ZIP, 7Z, SFX, TAR, TAR.GZ, TAR.ZSTD; compression, AES-256 encryption, name prefixes and suffixes with a number, layout, archive test after creation.
 - **Unpacking** (ALT+F9) in batches: into the other panel or here, "smart" or each archive into its own folder; volumes and TAR inside GZ/ZSTD/XZ open on their own.
+- **Entering an archive** by Enter: ZIP, 7Z, RAR, TAR, ISO and a TAR in GZ/BZ2/XZ/ZSTD open like a folder; F5 unpacks the marked objects into the other panel, Ctrl+A and F5 - the whole archive. Read-only inside.
 - **Explorer menu** on the right button, Recycle Bin on F8, past it — SHIFT+DEL.
 - **Three interface languages**: Russian, English, German — on the fly.
 - **COLORS**: your own colours for the window, panels and file types, per theme; the list background is a gradient with film grain.
