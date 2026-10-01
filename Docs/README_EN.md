@@ -23,6 +23,7 @@ Built on .NET 10 and Avalonia; everything it needs lives in the project folder: 
 - **Explorer menu** on the right button, Recycle Bin on F8, past it — SHIFT+DEL.
 - **Three interface languages**: Russian, English, German — on the fly.
 - **COLORS**: your own colours for the window, panels and file types, per theme; the list background is a gradient with film grain.
+- **A quick start and the tray**: the Audion mark shows right after the click, the window before its lists. If you wish, the program minimizes to the tray, starts there and with Windows — SETTINGS · START AND TRAY.
 - **Updates**: in the middle of the top line — the program, PeaZip and rclone with their versions and dots: green is the latest, light orange means GitHub has a newer one.
 
 ## Project folders

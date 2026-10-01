@@ -1,6 +1,6 @@
 {
   "schema": "audion.build_licenses.components.v1",
-  "generated_utc": "2026-09-29T21:22:52Z",
+  "generated_utc": "2026-10-01T02:07:48Z",
   "project_id": "audion-disk-tools",
   "project_name": "Audion Disk Tools",
   "scan_root": ".",
@@ -129,6 +129,7 @@
       ],
       "metadata": {
         "embedded_in": [
+          "Source/App.axaml.cs",
           "Source/MainWindow.axaml",
           "Source/MainWindow.axaml.cs",
           "Source/Views/FilePanel.axaml",
