@@ -1,7 +1,7 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Disk Tools** (`audion-disk-tools`)
-- Run: `20261002T070909Z_audion-disk-tools_4178b822`
+- Run: `20261003T020733Z_audion-disk-tools_ec8c7c83`
 - Scan root (from the project root): `.`
 - Output (from the project root): `licenses`
 - Status: **PASS**
@@ -24,7 +24,7 @@ No issues detected.
 | Microsoft Edit | `UNCHANGED` | bundled | bundled |
 | PeaZip | `UNCHANGED` | present-in-release | present-in-release |
 | rclone | `UNCHANGED` | 1.75.1 | 1.75.1 |
-| Windows Terminal | `UNCHANGED` | bundled | bundled |
+| Windows Terminal | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | bundled | bundled |
 
 ## Scope
 

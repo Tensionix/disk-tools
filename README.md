@@ -10,13 +10,12 @@
 
 **Version 5.41.2** · 2026-10-03 · 107.2 MB
 
-- [Direct download](https://dl.audion.dev/disk-tools/5.41.2/Audion_Disk_Tools_v5.41.2.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/disk-tools/5.41.2/Audion_Disk_Tools_v5.41.2_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/disk-tools) — every version and how to install
-- [GitHub release](https://github.com/Tensionix/disk-tools/releases/tag/v5.41.2)
 
 <p align="center"><img src="Docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: 962290d32358fb0207dc4fafd3fd9a7f0502d47169936081e2f6ec421461a9dc`
+`SHA-256: c9fb4d76bc405ee12f4d0e79ce469d4456cee92a78bc48935d82a4ab272d6c73`
 
 ---
 
@@ -39,6 +38,7 @@ Built on .NET 10 and Avalonia; everything it needs lives in the project folder: 
 - **Two panels** with tabs, drives, breadcrumbs and row colours by the file types of MASKS (the Audion Dark, Audion Code Dark, Audion Vault Dark — the interface in the colours of Audion DPI Manager, only the ground of the panels changes — and Audion Light themes).
 - **Mask filter** per panel: shows only the files you need together with their folder structure; copying from a filtered panel takes only them.
 - **Saved panels**: the folder and the marks of one or both panels — there and back in one click.
+- **Total Commander compatible**: TC tabs files (`.tab`, its "Save tabs to file") are imported and exported — the folders of the tabs, pins (the locked tabs of TC), captions, sorting, the active tab, one panel or both. Marks and mask filters are kept only in the program's own `.json`.
 - **Copy and move** (F5, F6) through robocopy: NTFS streams, creation and modification times, attributes, folders in 8 threads. Or rclone — switched in SETTINGS.
 - **COPY, MIRROR, BISYNC** (F11, F12): add what is new, make an exact copy (it counts the deletions first), two-way sync.
 - **BLAKE3 check**: after copying, source and copy are read again, the copy from disk past the cache; a move deletes the source only after a match.

@@ -1,6 +1,6 @@
 {
   "schema": "audion.build_licenses.components.v1",
-  "generated_utc": "2026-10-02T07:09:10Z",
+  "generated_utc": "2026-10-03T02:07:34Z",
   "project_id": "audion-disk-tools",
   "project_name": "Audion Disk Tools",
   "scan_root": ".",
@@ -404,7 +404,7 @@
       "bundled": true,
       "optional_runtime": false,
       "provider": "",
-      "artifact_sha256": "c2858a81f9b02603f25c400a98e7874cdaa2a34b4008927b565fae6c440b19e8",
+      "artifact_sha256": "7811e4f4945db23f6dd51bdc79b4a27e9b3b4378b46b3e522cf752ec253eccf3",
       "artifact_path": "Tools/terminal/.portable; Tools/terminal/CascadiaCode.ttf; Tools/terminal/CascadiaCodeItalic.ttf; Tools/terminal/CascadiaMono.ttf; Tools/terminal/CascadiaMonoItalic.ttf; Tools/terminal/Images/terminal_contrast-black.ico; Tools/terminal/Images/terminal_contrast-white.ico; Tools/terminal/Microsoft.Terminal.Control.dll",
       "obligation_class": "permissive",
       "redistributable": true,
