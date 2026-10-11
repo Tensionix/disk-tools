@@ -1,6 +1,6 @@
 {
   "schema": "audion.build_licenses.components.v1",
-  "generated_utc": "2026-10-03T02:57:34Z",
+  "generated_utc": "2026-10-11T09:06:41Z",
   "project_id": "audion-disk-tools",
   "project_name": "Audion Disk Tools",
   "scan_root": ".",
@@ -11,6 +11,8 @@
       "normalized_name": "audion-launcher",
       "version": "bundled",
       "license_summary": "Audion own code",
+      "license_expression": "Own",
+      "linkage": "own",
       "source_kind": "audion-first-party",
       "bundled": true,
       "optional_runtime": false,
@@ -47,11 +49,653 @@
       "license_fingerprint": "3d34b48b986e72171636407e8241394892758ca2f4b323dd5023b828569cea85"
     },
     {
+      "id": "nuget-avalonia",
+      "name": "Avalonia",
+      "normalized_name": "avalonia",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "l0VGyGn1OwqFrhmIhIHivvrQP0DtBD4Vn2F1vLYgGA2X2qHg0DMVRAln/6xOTLBUYoTopiVAujN0jtH8MpVSeA==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia/12.1.3/Avalonia.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia/12.1.3"
+      },
+      "license_fingerprint": "c87e9401db38cbebb1859c4889d4ded0f463c5004c693ff0477cae5c8bac2aad"
+    },
+    {
+      "id": "nuget-avalonia.angle.windows.natives",
+      "name": "Avalonia.Angle.Windows.Natives",
+      "normalized_name": "avalonia-angle-windows-natives",
+      "version": "2.1.27548.20260419",
+      "license_summary": "BSD-3-Clause",
+      "license_expression": "BSD-3-Clause",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "l17nI3XVDN3oMnpjf2pnmJg0YTwK4m6NLsn/itAjDMdObTFxN77D5F1M9sRMSfViSY3KKcse1ROczwgoWLJsnA==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/angle/",
+        "version": "2.1.27548.20260419",
+        "commit": "1c89805903c1482166356d3b950d474973180e61"
+      },
+      "legal_documents": [
+        {
+          "sha256": "bf4da21bd20bcfb5b60b7ecc67fa864a79be049e21d6178076887f178dd6c71a",
+          "display_name": "LICENSE",
+          "source_path": "nuget/Avalonia.Angle.Windows.Natives/2.1.27548.20260419/LICENSE",
+          "raw_size": 1675
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Angle.Windows.Natives/2.1.27548.20260419"
+      },
+      "license_fingerprint": "8efc9089ce08fb495edaaab34a9abd4c207c647bcf659c8cbc45629f893c3aa0"
+    },
+    {
+      "id": "nuget-avalonia.controls.colorpicker",
+      "name": "Avalonia.Controls.ColorPicker",
+      "normalized_name": "avalonia-controls-colorpicker",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "xzsA0K51Ibe9FnMo1MFpdlRvM0pTw/0Wx39fRJS0BV9c1dP7HiQcOCLqhmMsMpiXHnCDRs4SrWx7hgk+MWQxmg==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Controls.ColorPicker/12.1.3/Avalonia.Controls.ColorPicker.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Controls.ColorPicker/12.1.3"
+      },
+      "license_fingerprint": "c520660b036503e31d529e6063e502a24279ce0f4fc217a97ff6a634a4ef50a5"
+    },
+    {
+      "id": "nuget-avalonia.controls.datagrid",
+      "name": "Avalonia.Controls.DataGrid",
+      "normalized_name": "avalonia-controls-datagrid",
+      "version": "12.1.2",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "Tw02SZd/B42Gq6/l9IBPfuM+VsHPq7c6LXb9mT0xVjZB2UPeynfKlBgQDcrhu/SOfYUGk7tQSRmLFM2kaAjdrw==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia.Controls.DataGrid",
+        "version": "12.1.2",
+        "commit": "1e12211eb0c52a09e314ca57a344147c37d0a26c"
+      },
+      "legal_documents": [
+        {
+          "sha256": "7fb37fd7fb4647a608e76598235bbb89ae1e6a6ad390adfce842e96f67912bee",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Controls.DataGrid/12.1.2/Avalonia.Controls.DataGrid.nuspec",
+          "raw_size": 1341
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Controls.DataGrid/12.1.2"
+      },
+      "license_fingerprint": "5ef8e31d1afc38d88d29b6bc4690366bac69293683385ffa4c8c02715b381bdf"
+    },
+    {
+      "id": "nuget-avalonia.desktop",
+      "name": "Avalonia.Desktop",
+      "normalized_name": "avalonia-desktop",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "kjCpRlBIK5OZDnQ01Hd43CF0Mq4eQ9ndABiDCJAGtLD7lbzX6KxJ08vIK4N1VAiY4/enAUz8oT8q4O6bSybrBQ==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Desktop/12.1.3/Avalonia.Desktop.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Desktop/12.1.3"
+      },
+      "license_fingerprint": "a0a20e11d6bcdf35363bdbca352119dc261590d2572feb0920d981efaae92b9f"
+    },
+    {
+      "id": "nuget-avalonia.fonts.inter",
+      "name": "Avalonia.Fonts.Inter",
+      "normalized_name": "avalonia-fonts-inter",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "kNh670aMSkTk/2gA0F1rnghio4PL4op89Ypreq2BL9J/A/3PYxhoMfTPEgHUjOcPliPOyXsk5/86WzlJNeeETA==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Fonts.Inter/12.1.3/Avalonia.Fonts.Inter.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Fonts.Inter/12.1.3"
+      },
+      "license_fingerprint": "ec71ee8cbaf02a65c4dc9fd689d6b68f30efce8832f99986ad52b7863df3f265"
+    },
+    {
+      "id": "nuget-avalonia.freedesktop",
+      "name": "Avalonia.FreeDesktop",
+      "normalized_name": "avalonia-freedesktop",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "yEvk7qm0QPzgQwFZZTAIUXt31sQOSSeOSVTDrcm/Pk+5klNN+8C08kIJs9ZD8RY9esHVk2g6VHPab6DceJYRCw==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.FreeDesktop/12.1.3/Avalonia.FreeDesktop.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.FreeDesktop/12.1.3"
+      },
+      "license_fingerprint": "86d59a412294006b77e57e231e050254224714f17ed6d9afbc88267939890f98"
+    },
+    {
+      "id": "nuget-avalonia.freedesktop.atspi",
+      "name": "Avalonia.FreeDesktop.AtSpi",
+      "normalized_name": "avalonia-freedesktop-atspi",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "t9dP6VQAKGlXtftNuj7QzFtE54AI1qH1dwFmDEJlvI5gweCLNR8ebgRCLlO/bSLWzzV8dZtb6mB/glZ8soisDw==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.FreeDesktop.AtSpi/12.1.3/Avalonia.FreeDesktop.AtSpi.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.FreeDesktop.AtSpi/12.1.3"
+      },
+      "license_fingerprint": "e506800439e9fdb240a817e8f93c8d479d7b091555903e28f541faaebac304a5"
+    },
+    {
+      "id": "nuget-avalonia.harfbuzz",
+      "name": "Avalonia.HarfBuzz",
+      "normalized_name": "avalonia-harfbuzz",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "XcO9BBsmZHMIK+e+yy1TGsytlhqa7o4ih2Y7B0Q7OKh91GEEerbEc6v/X2kRmluKxyYNSmkwH5Uzj53FtjJngA==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.HarfBuzz/12.1.3/Avalonia.HarfBuzz.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.HarfBuzz/12.1.3"
+      },
+      "license_fingerprint": "c9c241b4050e17d9935f04a17dd42556c8c93b8e3f0fc09cf04c8cd3080a3364"
+    },
+    {
+      "id": "nuget-avalonia.native",
+      "name": "Avalonia.Native",
+      "normalized_name": "avalonia-native",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "TP6G8mF8vPufxycwe/dfLTsNhqQOGBt2Os5MtJshUGfVQ8zlYUG8K8JckPE+dweuDraAKq305aHXseReD7UgXQ==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Native/12.1.3/Avalonia.Native.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Native/12.1.3"
+      },
+      "license_fingerprint": "1d32da4ee34412dfa72d5f69c807ff780b5b6af18605628ce723246315a49525"
+    },
+    {
+      "id": "nuget-avalonia.remote.protocol",
+      "name": "Avalonia.Remote.Protocol",
+      "normalized_name": "avalonia-remote-protocol",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "HcF69DKyihgg5coLOSp7GTqxQvWAy58LMKauwcHA28uSBJVwu0h5+gTNdJA8Sn/nqJVTRDU98zYsk6i1QSwDVQ==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Remote.Protocol/12.1.3/Avalonia.Remote.Protocol.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Remote.Protocol/12.1.3"
+      },
+      "license_fingerprint": "c5bbc3fe86324f63fdde327b8414f59d542f4ae5d6668f90431802e1bd63eadd"
+    },
+    {
+      "id": "nuget-avalonia.skia",
+      "name": "Avalonia.Skia",
+      "normalized_name": "avalonia-skia",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "fYfSecJ6vQT3zB9vWl2DOoBK6JM4Mzxpz7KbUPxJePjY/yUl2OyhjKCyUcGZF2DV5mpAYfCOT4rdKEk8hP/lCA==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Skia/12.1.3/Avalonia.Skia.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Skia/12.1.3"
+      },
+      "license_fingerprint": "ef0d030cbdad83c9d8c292966570e2d7fc73e5605d89cd2f1a9038d9c071f27d"
+    },
+    {
+      "id": "nuget-avalonia.themes.fluent",
+      "name": "Avalonia.Themes.Fluent",
+      "normalized_name": "avalonia-themes-fluent",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "ens/GHfXXk0W1ZScHZ2XG6DFiVyUVKR+0O8QK6zkviMNAPQCNwkftXlRVSFSQGtBYxXoJHZMsKYvCLEtVyzkug==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Themes.Fluent/12.1.3/Avalonia.Themes.Fluent.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Themes.Fluent/12.1.3"
+      },
+      "license_fingerprint": "d7c45be4d469af8950d9174243b39891902c50d9d5d9671f68cd4925cfdb4bc6"
+    },
+    {
+      "id": "nuget-avalonia.win32",
+      "name": "Avalonia.Win32",
+      "normalized_name": "avalonia-win32",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "RXSOmQGV5uKS9orIeE8a5oGz9QukzBnQTP3dtT9uJUhIIuZracy3ItoW8gtlZGBs3lzhEFTZlOk1Fn/Zxj/iAg==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.Win32/12.1.3/Avalonia.Win32.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.Win32/12.1.3"
+      },
+      "license_fingerprint": "984c04e0ffd59b3dd06677c471ec484830daa5a1c27f3c232d129022652ca102"
+    },
+    {
+      "id": "nuget-avalonia.x11",
+      "name": "Avalonia.X11",
+      "normalized_name": "avalonia-x11",
+      "version": "12.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Avalonia Team",
+      "artifact_sha256": "NWkfAGgERPlYRKpiB18t5auSFA/Ffd++uZsUEtHPc/maitjydNJVDmtY21pUqR2QvAeTCl1nRAagi+j9bKVyKw==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/AvaloniaUI/Avalonia/",
+        "version": "12.1.3",
+        "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905"
+      },
+      "legal_documents": [
+        {
+          "sha256": "0f87aebe0f73fbc6a7e9b87d16d647c2d0180f726052be4b2f14f636dd004136",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Avalonia.X11/12.1.3/Avalonia.X11.nuspec",
+          "raw_size": 1324
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2013-2026 © The AvaloniaUI Project",
+        "nuget": "https://www.nuget.org/packages/Avalonia.X11/12.1.3"
+      },
+      "license_fingerprint": "f215b2ad4f7b7ac153dd0090b4bc9372c6c904109eb89ed50e3bdc005ed2f1db"
+    },
+    {
+      "id": "nuget-blake3",
+      "name": "Blake3",
+      "normalized_name": "blake3",
+      "version": "3.0.2",
+      "license_summary": "BSD-2-Clause",
+      "license_expression": "BSD-2-Clause",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Alexandre Mutel",
+      "artifact_sha256": "THvWhdj8ErSdrGamTqjshCU1ImANfr7ieKY6eFqeMsRenvXEKut9qGm5/MA4SUk8IYvAahf67jSh0yVj9jTPzg==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/xoofx/Blake3.NET",
+        "version": "3.0.2",
+        "commit": "bc622edf7faa06d1a63c0f2f165c5f7c567a2e32"
+      },
+      "legal_documents": [
+        {
+          "sha256": "5394fa5820e54298b8ee7a90cd4448993826da5bf43d16d1578ea640edce6b5f",
+          "display_name": "license.txt",
+          "source_path": "collector/dotnet/Blake3/license.txt",
+          "raw_size": 1628
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Alexandre Mutel",
+        "nuget": "https://www.nuget.org/packages/Blake3/3.0.2"
+      },
+      "license_fingerprint": "6abcb651611b3e330e867d8da34b566e05d4938e11ae39d73c7cf904adb6fb67"
+    },
+    {
       "id": "cascadia-code",
       "name": "Cascadia Code",
       "normalized_name": "cascadia-code",
       "version": "bundled",
       "license_summary": "OFL-1.1",
+      "license_expression": "OFL-1.1",
+      "linkage": "data",
       "source_kind": "baseline-runtime",
       "bundled": true,
       "optional_runtime": false,
@@ -100,11 +744,178 @@
       "license_fingerprint": "a177dc265b617ddd44945167195b9fc67951e99b0877fca26e73108bea57f557"
     },
     {
+      "id": "nuget-harfbuzzsharp",
+      "name": "HarfBuzzSharp",
+      "normalized_name": "harfbuzzsharp",
+      "version": "8.3.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Microsoft",
+      "artifact_sha256": "NGZ2+ZVNPM+NdHB/asW0/ykWngyHWwcqjrbN2nDeH1B/aptPGlCUl8wkQ2cSJxw5fdWgdmIPmNuTPWpLwNVXWg==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://go.microsoft.com/fwlink/?linkid=868515",
+        "version": "8.3.1.3",
+        "commit": "2888c737ad016d584c74525e2d35db5097ea8576"
+      },
+      "legal_documents": [
+        {
+          "sha256": "4319f2fc2c635aa1d97672ec2ea84a93bc99ea4e9d4cfbeccd046be0a90c2415",
+          "display_name": "LICENSE.txt",
+          "source_path": "nuget/HarfBuzzSharp/8.3.1.3/LICENSE.txt",
+          "raw_size": 1129
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "© Microsoft Corporation. All rights reserved.",
+        "nuget": "https://www.nuget.org/packages/HarfBuzzSharp/8.3.1.3"
+      },
+      "license_fingerprint": "fa3328f27a3f7eb4f12a67b64f31796df33e89cd66794f3c30b3a52dda555ea0"
+    },
+    {
+      "id": "nuget-harfbuzzsharp.nativeassets.win32",
+      "name": "HarfBuzzSharp.NativeAssets.Win32",
+      "normalized_name": "harfbuzzsharp-nativeassets-win32",
+      "version": "8.3.1.3",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Microsoft",
+      "artifact_sha256": "bx8CE8Js+XGX8PUxAHCBDEORt5aaBYtMN4Hr9QFs57Xithh6yjUyYqksizH6eRDhJkwsGI+SXWmPmMm8lZC9Pw==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://go.microsoft.com/fwlink/?linkid=868515",
+        "version": "8.3.1.3",
+        "commit": "2888c737ad016d584c74525e2d35db5097ea8576"
+      },
+      "legal_documents": [
+        {
+          "sha256": "4319f2fc2c635aa1d97672ec2ea84a93bc99ea4e9d4cfbeccd046be0a90c2415",
+          "display_name": "LICENSE.txt",
+          "source_path": "nuget/HarfBuzzSharp.NativeAssets.Win32/8.3.1.3/LICENSE.txt",
+          "raw_size": 1129
+        },
+        {
+          "sha256": "eb2375b37d758843f0fab75b96f3bdf9f5c98e433b1869af903dfe00f460c873",
+          "display_name": "THIRD-PARTY-NOTICES.txt",
+          "source_path": "nuget/HarfBuzzSharp.NativeAssets.Win32/8.3.1.3/THIRD-PARTY-NOTICES.txt",
+          "raw_size": 139775
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "© Microsoft Corporation. All rights reserved.",
+        "nuget": "https://www.nuget.org/packages/HarfBuzzSharp.NativeAssets.Win32/8.3.1.3"
+      },
+      "license_fingerprint": "ad04de6c2bcffa6779dbb2110f68eefd282abaeb660ca28dcc16869e11c96c84"
+    },
+    {
+      "id": "embedded-inter",
+      "name": "Inter",
+      "normalized_name": "inter",
+      "version": "3.019",
+      "license_summary": "OFL-1.1",
+      "license_expression": "OFL-1.1",
+      "linkage": "data",
+      "source_kind": "embedded-asset",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "The Inter Project Authors",
+      "artifact_sha256": "",
+      "artifact_path": "",
+      "obligation_class": "notice",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream",
+        "url": "https://github.com/rsms/inter",
+        "version": "3.019"
+      },
+      "legal_documents": [
+        {
+          "sha256": "5cfd4b1a4302f0828b4d2756b7927f37008767a0f1ec2c30f1238cbc9c43fdea",
+          "display_name": "Inter: copyright as the font states it, SIL Open Font License 1.1",
+          "source_path": "copyright line read from the name table of the Inter faces inside Avalonia.Fonts.Inter 12.1.3; the licence text is the OFL 1.1 file as the JetBrains Mono package ships it, below its own copyright line",
+          "raw_size": 4377
+        }
+      ],
+      "metadata": {
+        "embedded_in": [
+          "Source/App.axaml",
+          "Source/Program.cs"
+        ],
+        "embedding": "The Inter font inside the NuGet package Avalonia.Fonts.Inter, loaded by .WithInterFont(). The package states MIT for its own code and says nothing of the font; the font states its copyright and the SIL Open Font License 1.1 in its name table.",
+        "linkage": "data"
+      },
+      "license_fingerprint": "64c6abff57f3c23b88e6b7a326ae5cfa1147609bc47ee7d1f8250a693ee96b3c"
+    },
+    {
+      "id": "embedded-jetbrains-mono",
+      "name": "JetBrains Mono",
+      "normalized_name": "jetbrains-mono",
+      "version": "2.211",
+      "license_summary": "OFL-1.1",
+      "license_expression": "OFL-1.1",
+      "linkage": "data",
+      "source_kind": "embedded-asset",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "The JetBrains Mono Project Authors",
+      "artifact_sha256": "",
+      "artifact_path": "",
+      "obligation_class": "notice",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream",
+        "url": "https://github.com/JetBrains/JetBrainsMono",
+        "version": "2.211"
+      },
+      "legal_documents": [
+        {
+          "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90",
+          "display_name": "JetBrains Mono OFL.txt (SIL Open Font License 1.1)",
+          "source_path": "JetBrains Mono font package, file OFL.txt - the copy the programs keep beside the font files",
+          "raw_size": 4399
+        }
+      ],
+      "metadata": {
+        "embedded_in": [
+          "Source/App.axaml",
+          "Source/App.axaml.cs",
+          "Source/Program.cs"
+        ],
+        "embedding": "The font files of JetBrains Mono, built into the program as resources (Source/Assets/Fonts/JetBrainsMono) and registered as the font collection fonts:JetBrainsMono. The version is the one the font states in its name table.",
+        "linkage": "data"
+      },
+      "license_fingerprint": "c7facead91bc38a824f1473566f7815f8eff2175ca1fec767c28eb611a65f129"
+    },
+    {
       "id": "embedded-lucide",
       "name": "Lucide",
       "normalized_name": "lucide",
       "version": "1.48.0",
       "license_summary": "ISC AND MIT",
+      "license_expression": "ISC AND MIT",
+      "linkage": "embedded_asset",
       "source_kind": "embedded-asset",
       "bundled": true,
       "optional_runtime": false,
@@ -145,6 +956,8 @@
       "normalized_name": "micro-editor",
       "version": "bundled",
       "license_summary": "MIT; statically linked Go dependencies under their own licences, see micro third-party notices",
+      "license_expression": "MIT",
+      "linkage": "separate_program",
       "source_kind": "optional-tool",
       "bundled": true,
       "optional_runtime": false,
@@ -199,11 +1012,53 @@
       "license_fingerprint": "44fcfa82d3c9ec939f7615ea21656ffb83496a89148f7b7cdf8096fa6966cb9f"
     },
     {
+      "id": "nuget-microcom.runtime",
+      "name": "MicroCom.Runtime",
+      "normalized_name": "microcom-runtime",
+      "version": "0.11.6",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "MicroCom.Runtime",
+      "artifact_sha256": "NdNWGDiZ6eS/Mf/9+QHR91cj1K7Hy+PX9yrHI/zM7xFYuj9IWT2uxtB6sCHjrnxAeLV9fut1R6zHDUGKX6f9lQ==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/kekekeks/MicroCom",
+        "version": "0.11.6",
+        "commit": "76785efcafd91b5902fd19dd11145f6dd655b7b4"
+      },
+      "legal_documents": [
+        {
+          "sha256": "b55cda818ffa577849a592cdb09dd7efe3a369690cd90d4639439e79ae9170a2",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/MicroCom.Runtime/0.11.6/MicroCom.Runtime.nuspec",
+          "raw_size": 1312
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Copyright 2021 © Nikita Tsukanov",
+        "nuget": "https://www.nuget.org/packages/MicroCom.Runtime/0.11.6"
+      },
+      "license_fingerprint": "df69c0b431654a22898dfb4920de038f05d29c465b3b5b680b909fdf3ab4440f"
+    },
+    {
       "id": "microsoft-edit",
       "name": "Microsoft Edit",
       "normalized_name": "microsoft-edit",
       "version": "bundled",
       "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "separate_program",
       "source_kind": "optional-tool",
       "bundled": true,
       "optional_runtime": false,
@@ -251,11 +1106,59 @@
       "license_fingerprint": "fa11bf069fff5f3fcbb063d476b9461bf899f222b3f781ed8ea3a2d070193152"
     },
     {
+      "id": "nuget-microsoft.netcore.app.runtime.win-x64",
+      "name": "Microsoft.NETCore.App.Runtime.win-x64",
+      "normalized_name": "microsoft-netcore-app-runtime-win-x64",
+      "version": "10.0.12",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Microsoft",
+      "artifact_sha256": "",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/dotnet/dotnet",
+        "version": "10.0.12",
+        "commit": "95017c711e6afc1085133d440e42b4bd78155701"
+      },
+      "legal_documents": [
+        {
+          "sha256": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310",
+          "display_name": "LICENSE.TXT",
+          "source_path": "nuget/Microsoft.NETCore.App.Runtime.win-x64/10.0.12/LICENSE.TXT",
+          "raw_size": 1139
+        },
+        {
+          "sha256": "c6926930d0181fa515076603e1305461b1bce5275a8b35337d75d2eef3acad4a",
+          "display_name": "THIRD-PARTY-NOTICES.TXT",
+          "source_path": "nuget/Microsoft.NETCore.App.Runtime.win-x64/10.0.12/THIRD-PARTY-NOTICES.TXT",
+          "raw_size": 78041
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": true,
+        "copyright": "© Microsoft Corporation. All rights reserved.",
+        "nuget": "https://www.nuget.org/packages/Microsoft.NETCore.App.Runtime.win-x64/10.0.12"
+      },
+      "license_fingerprint": "cedbe796343121b119bc022839827dadce16619abe9ae08ad9b3d65b240af93c"
+    },
+    {
       "id": "peazip",
       "name": "PeaZip",
       "normalized_name": "peazip",
       "version": "present-in-release",
       "license_summary": "LGPL-3.0-or-later with bundled third-party components; see PeaZip notices",
+      "license_expression": "LGPL-3.0-or-later",
+      "linkage": "separate_program",
       "source_kind": "optional-tool",
       "bundled": true,
       "optional_runtime": false,
@@ -331,20 +1234,22 @@
       "id": "rclone",
       "name": "rclone",
       "normalized_name": "rclone",
-      "version": "1.75.1",
+      "version": "1.75.2",
       "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "separate_program",
       "source_kind": "optional-tool",
       "bundled": true,
       "optional_runtime": false,
       "provider": "",
-      "artifact_sha256": "b8af8bf158ef3df89e53c0d4753ec1faa36071d93b16bdbaf07ce28e59178627",
+      "artifact_sha256": "8989bc9f42791cce031e94d0db0a99b5cabbc03b3dbd04d24a5567df403f9f27",
       "artifact_path": "Tools/rclone/README.txt; Tools/rclone/rclone.exe; Tools/rclone/version.txt",
       "obligation_class": "permissive",
       "redistributable": true,
       "source_reference": {
         "type": "upstream_pin",
         "url": "https://github.com/rclone/rclone/releases",
-        "version": "1.75.1",
+        "version": "1.75.2",
         "winget_id": "Rclone.Rclone",
         "sha256": ""
       },
@@ -386,7 +1291,7 @@
           "source_archive": {
             "type": "upstream_pin",
             "url": "https://github.com/rclone/rclone/releases",
-            "version": "1.75.1",
+            "version": "1.75.2",
             "winget_id": "Rclone.Rclone",
             "sha256": ""
           }
@@ -395,11 +1300,139 @@
       "license_fingerprint": "c95b47bef19463b1c3fef1de3096e8096f5d547cba04cf375be41b8931a93de0"
     },
     {
+      "id": "nuget-skiasharp",
+      "name": "SkiaSharp",
+      "normalized_name": "skiasharp",
+      "version": "3.119.4",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Microsoft",
+      "artifact_sha256": "53NOSUZ1Us+91Sm0uCkIivh/k7jOowRErZT2sIWwPFN9mLUvdxnE6rS4sWo4255+Rd2MWUSF+j0NMZHD6Cke+Q==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://go.microsoft.com/fwlink/?linkid=868515",
+        "version": "3.119.4",
+        "commit": "f568ac94dd768ef9a2f593537cfde2dd0d348ef5"
+      },
+      "legal_documents": [
+        {
+          "sha256": "4319f2fc2c635aa1d97672ec2ea84a93bc99ea4e9d4cfbeccd046be0a90c2415",
+          "display_name": "LICENSE.txt",
+          "source_path": "nuget/SkiaSharp/3.119.4/LICENSE.txt",
+          "raw_size": 1129
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "© Microsoft Corporation. All rights reserved.",
+        "nuget": "https://www.nuget.org/packages/SkiaSharp/3.119.4"
+      },
+      "license_fingerprint": "ab1d09c6dea450e119224906b2cab940374ba002e3396dd42bf08a2ce4971dbd"
+    },
+    {
+      "id": "nuget-skiasharp.nativeassets.win32",
+      "name": "SkiaSharp.NativeAssets.Win32",
+      "normalized_name": "skiasharp-nativeassets-win32",
+      "version": "3.119.4",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Microsoft",
+      "artifact_sha256": "XOpbx/4CReO2wYsq2s6rbvdauc6dntG4Zv499sHGTJ87bwZaFXszFkwql3+FIZMc8kUPeaj3Mx2ezIJmo8a1Kg==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://go.microsoft.com/fwlink/?linkid=868515",
+        "version": "3.119.4",
+        "commit": "f568ac94dd768ef9a2f593537cfde2dd0d348ef5"
+      },
+      "legal_documents": [
+        {
+          "sha256": "4319f2fc2c635aa1d97672ec2ea84a93bc99ea4e9d4cfbeccd046be0a90c2415",
+          "display_name": "LICENSE.txt",
+          "source_path": "nuget/SkiaSharp.NativeAssets.Win32/3.119.4/LICENSE.txt",
+          "raw_size": 1129
+        },
+        {
+          "sha256": "eb2375b37d758843f0fab75b96f3bdf9f5c98e433b1869af903dfe00f460c873",
+          "display_name": "THIRD-PARTY-NOTICES.txt",
+          "source_path": "nuget/SkiaSharp.NativeAssets.Win32/3.119.4/THIRD-PARTY-NOTICES.txt",
+          "raw_size": 139775
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "© Microsoft Corporation. All rights reserved.",
+        "nuget": "https://www.nuget.org/packages/SkiaSharp.NativeAssets.Win32/3.119.4"
+      },
+      "license_fingerprint": "ca58f3b824b2f68539c75c8e3f10b62f923c8d50b27afa178d269bf0bea57f78"
+    },
+    {
+      "id": "nuget-tmds.dbus.protocol",
+      "name": "Tmds.DBus.Protocol",
+      "normalized_name": "tmds-dbus-protocol",
+      "version": "0.94.1",
+      "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "dynamic_library",
+      "source_kind": "dotnet-package",
+      "bundled": true,
+      "optional_runtime": false,
+      "provider": "Tom Deseyn",
+      "artifact_sha256": "11YMr7FnAbL83bQmVxlhbIKHvSLxjO81D12Ej0QMSGXMDTxNA9MTOa4MQxx43nv5el/efuPHwzyrj6a5ha2gug==",
+      "artifact_path": "",
+      "obligation_class": "permissive",
+      "redistributable": true,
+      "source_reference": {
+        "type": "upstream_pin",
+        "url": "https://github.com/tmds/Tmds.DBus.git",
+        "version": "0.94.1",
+        "commit": "b4a7fed0b878f74cb54f7cca84d2889af4e596ba"
+      },
+      "legal_documents": [
+        {
+          "sha256": "db2c46998b8b762dfa0b0f4bee00fcd5dfb6622b2729e3ffac583bd7f50d8047",
+          "display_name": "LICENSE (MIT, as named by the package)",
+          "source_path": "nuget/Tmds.DBus.Protocol/0.94.1/Tmds.DBus.Protocol.nuspec",
+          "raw_size": 1275
+        }
+      ],
+      "metadata": {
+        "deps": [
+          "App/AudionDiskTools.deps.json"
+        ],
+        "runtime_pack": false,
+        "copyright": "Tom Deseyn",
+        "nuget": "https://www.nuget.org/packages/Tmds.DBus.Protocol/0.94.1"
+      },
+      "license_fingerprint": "887064ffb3bd7f79d9979853f251893dbd5a9060a7ccbf0648058b36ba3b0d78"
+    },
+    {
       "id": "windows-terminal",
       "name": "Windows Terminal",
       "normalized_name": "windows-terminal",
       "version": "bundled",
       "license_summary": "MIT",
+      "license_expression": "MIT",
+      "linkage": "separate_program",
       "source_kind": "portable-app",
       "bundled": true,
       "optional_runtime": false,
