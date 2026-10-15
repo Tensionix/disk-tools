@@ -192,7 +192,7 @@ BUNDLED COMPONENTS
    Legal documents: L-d25deed12d80
 
 27. Microsoft.NETCore.App.Runtime.win-x64
-   Version: 10.0.12
+   Version: 10.0.13
    License: MIT
    Source type: dotnet-package
    Provider: Microsoft
@@ -3838,7 +3838,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 [L-c6926930d018] THIRD-PARTY-NOTICES.TXT
 SHA256: c6926930d0181fa515076603e1305461b1bce5275a8b35337d75d2eef3acad4a
 Components: Microsoft.NETCore.App.Runtime.win-x64
-Captured from: nuget/Microsoft.NETCore.App.Runtime.win-x64/10.0.12/THIRD-PARTY-NOTICES.TXT
+Captured from: nuget/Microsoft.NETCore.App.Runtime.win-x64/10.0.13/THIRD-PARTY-NOTICES.TXT
 --------------------------------------------------------------------------------
 .NET Runtime uses third-party libraries or other resources that may be
 distributed under licenses different than the .NET Runtime software.
@@ -5263,7 +5263,7 @@ You are solely responsible for determining the appropriateness of using and dist
 [L-cfc21f5e8bd6] LICENSE.TXT
 SHA256: cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310
 Components: Microsoft.NETCore.App.Runtime.win-x64
-Captured from: nuget/Microsoft.NETCore.App.Runtime.win-x64/10.0.12/LICENSE.TXT
+Captured from: nuget/Microsoft.NETCore.App.Runtime.win-x64/10.0.13/LICENSE.TXT
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
