@@ -1,7 +1,7 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Disk Tools** (`audion-disk-tools`)
-- Run: `20261015T231951Z_audion-disk-tools_6384fcb7`
+- Run: `20261029T012234Z_audion-disk-tools_54bdb5f1`
 - Scan root (from the project root): `.`
 - Output (from the project root): `licenses`
 - Status: **PASS**
@@ -43,7 +43,7 @@ No issues detected.
 | micro editor | `UNCHANGED` | bundled | bundled |
 | MicroCom.Runtime | `UNCHANGED` | 0.11.6 | 0.11.6 |
 | Microsoft Edit | `UNCHANGED` | bundled | bundled |
-| Microsoft.NETCore.App.Runtime.win-x64 | `VERSION_OR_ARTIFACT_CHANGED_LICENSE_SAME` | 10.0.12 | 10.0.13 |
+| Microsoft.NETCore.App.Runtime.win-x64 | `UNCHANGED` | 10.0.14 | 10.0.14 |
 | PeaZip | `UNCHANGED` | present-in-release | present-in-release |
 | rclone | `UNCHANGED` | 1.75.2 | 1.75.2 |
 | SkiaSharp | `UNCHANGED` | 3.119.4 | 3.119.4 |
